@@ -8,8 +8,9 @@ Support in Intracranial Hemorrhage Triage on Non-Contrast Head CT"
 ## Contents
 
 ```
-src/   Training, evaluation, examination-level aggregation, and analysis code
-data/  Patient-level partition lists (train/val/test) and per-series rescale metadata
+src/        Training, evaluation, examination-level aggregation, and analysis code
+analysis/   Multi-seed, calibration, and bootstrap analysis scripts with precomputed outputs
+data/       Patient-level partition lists (train/val/test) and per-series rescale metadata
 ```
 
 ### Source code (`src/`)
@@ -23,10 +24,23 @@ data/  Patient-level partition lists (train/val/test) and per-series rescale met
 | `wavelet_attention.py` | Haar DWT/IDWT, SE blocks, wavelet attention module |
 | `edl_head.py` | Evidential (Dirichlet) head: losses and predictions |
 | `train.py` | Training loop (50 epochs, AdamW, cosine annealing, balanced sampler, seed control) |
-| `evaluate.py` | Risk-coverage, ROC, calibration, and figure generation |
+| `evaluate.py` | Risk-coverage, ROC, calibration, examination-level aggregation, and figure generation |
 | `gradcam.py` | Grad-CAM visualization |
 | `run_experiments_v4.sh` | Factorial ablation used for the reported results (4 configurations) |
 | `run_seeds.sh` | Multi-seed replication protocol (5 independent seeds per configuration) |
+
+### Analysis scripts (`analysis/`)
+
+| File | Purpose |
+|------|---------|
+| `analyze.py` | Main test-set evaluation: Table 2 metrics, risk--coverage (Table 7), figures |
+| `analyze2c.py` | Examination-level evaluation (Table 8) |
+| `analyze3.py` | Calibration assessment: standard and quantile-binned ECE, Brier, NLL, prior correction, temperature scaling (Table 6) |
+| `analyze4.py` | Multi-seed aggregation: mean ± SD and range (Table 3), SE-only and deep-ensemble rows (Table 4, Table 7) |
+| `analyze5_supp_ci.py` | Patient-clustered bootstrap confidence intervals around the multi-seed means (Supplementary Table S1) |
+| `generate_val_predictions.py` | Validation-set predictions for temperature-scaling fits |
+| `make_fig6.py` | Examination-level evaluation figure |
+| `results/` | Precomputed outputs of the above analyses (Tables 3, 4, 6, 7, 8, 10, 11, S1) |
 
 ### Data files (`data/`)
 
@@ -50,6 +64,14 @@ MAXPAR=1 bash src/run_seeds.sh
 # figures and risk-coverage/calibration summaries
 python src/evaluate.py
 ```
+
+The analysis scripts read the per-run prediction files (`probs`, `labels`, `unc`)
+produced by `src/evaluate.py`. `analyze4.py` expects the primary runs under
+`~/analysis_data/runs/<config>/` and the seed replications under
+`~/analysis_data/runs_seeds/<config>_s<seed>/`; `analyze5_supp_ci.py` reads them
+from the directory given by the `ICH_ANALYSIS_DATA` environment variable.
+The precomputed JSON files under `analysis/results/` reproduce every derived
+number in the manuscript without retraining.
 
 Requirements: Python >= 3.10, PyTorch 2.5.1, torchvision 0.20.1, scikit-learn, numpy, pandas, opencv-python, matplotlib, scipy.
 
