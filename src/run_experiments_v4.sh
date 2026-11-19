@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
-source /root/miniconda3/etc/profile.d/conda.sh
-conda activate base
-cd /root/autodl-tmp/ich_project/code
+# activate your Python environment with PyTorch installed, e.g.:
+# source /path/to/miniconda3/etc/profile.d/conda.sh && conda activate base
+cd "${ICH_CODE_DIR:-$(dirname "$0")}"
 EPOCHS=50
 echo "============================================"
 echo "Experiment 1/4: Baseline (50 epochs, no early stop)"

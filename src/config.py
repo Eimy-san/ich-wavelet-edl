@@ -1,14 +1,15 @@
 import argparse
+import os
 
 def get_config():
     p = argparse.ArgumentParser(description='Wavelet-EDL ICH Detection')
     # data
-    p.add_argument('--data_dir', type=str, default='/root/autodl-tmp/ich_project/data')
-    p.add_argument('--img_dir', type=str, default='/root/autodl-tmp/ich_project/data/images')
-    p.add_argument('--labels_csv', type=str, default='/root/autodl-tmp/ich_project/data/rsna_slice_labels.csv')
-    p.add_argument('--rescale_csv', type=str, default='/root/autodl-tmp/ich_project/data/rsna_rescale_values.csv')
-    p.add_argument('--manifest_csv', type=str, default='/root/autodl-tmp/ich_project/data/manifest.csv')
-    p.add_argument('--output_dir', type=str, default='/root/autodl-tmp/ich_project/runs')
+    p.add_argument('--data_dir', type=str, default=os.environ.get('ICH_DATA_DIR', './data'))
+    p.add_argument('--img_dir', type=str, default=os.path.join(os.environ.get('ICH_DATA_DIR', './data'), 'images'))
+    p.add_argument('--labels_csv', type=str, default=os.path.join(os.environ.get('ICH_DATA_DIR', './data'), 'rsna_slice_labels.csv'))
+    p.add_argument('--rescale_csv', type=str, default=os.path.join(os.environ.get('ICH_DATA_DIR', './data'), 'rsna_rescale_values.csv'))
+    p.add_argument('--manifest_csv', type=str, default=os.path.join(os.environ.get('ICH_DATA_DIR', './data'), 'manifest.csv'))
+    p.add_argument('--output_dir', type=str, default=os.environ.get('ICH_OUTPUT_DIR', './runs'))
     # model
     p.add_argument('--backbone', type=str, default='resnet50', choices=['resnet50', 'efficientnet_b0', 'densenet121'])
     p.add_argument('--use_wavelet', action='store_true', default=False)
@@ -17,6 +18,8 @@ def get_config():
     p.add_argument('--img_size', type=int, default=224)
     p.add_argument('--pretrained', action='store_true', default=True)
     p.add_argument('--se_reduction', type=int, default=8, help='SE block reduction ratio for wavelet attention')
+    p.add_argument('--idwt_legacy', action='store_true', default=False,
+                   help='use the legacy inverse-transform placement of the originally reported runs')
     p.add_argument('--se_only', action='store_true', default=False,
                    help='parameter-matched SE-only attention (no DWT decomposition)')
     p.add_argument('--wavelet_pos', type=str, default='layer2', choices=['layer2', 'layer3', 'layer2_layer3'])

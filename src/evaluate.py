@@ -118,8 +118,8 @@ def selective_metrics(probs, labels, unc, target_coverage=0.95):
 
 
 def main():
-    runs_dir = '/root/autodl-tmp/ich_project/runs'
-    fig_dir = '/root/autodl-tmp/ich_project/figures'
+    runs_dir = os.environ.get('ICH_OUTPUT_DIR', './runs')
+    fig_dir = os.environ.get('ICH_FIG_DIR', './figures')
     os.makedirs(fig_dir, exist_ok=True)
 
     exp_names = ['baseline', 'wavelet_only', 'edl_only', 'wavelet_edl']

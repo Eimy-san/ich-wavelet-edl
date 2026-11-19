@@ -29,16 +29,25 @@ class HaarDWT(nn.Module):
 
 
 class HaarIDWT(nn.Module):
-    """Inverse Haar DWT: reconstruct from 4 subbands."""
-    def __init__(self):
+    """Inverse Haar DWT: exact reconstruction from the 4 subbands.
+
+    legacy=True reproduces the placement convention used for the originally
+    reported results, in which the inverse filtering is followed by a fixed
+    180-degree transposition within each 2x2 block (see the manuscript's
+    implementation note). The default is the exact inverse.
+    """
+    def __init__(self, legacy=False):
         super().__init__()
+        self.legacy = legacy
 
     def forward(self, ll, lh, hl, hh):
         b, c, h, w = ll.shape
-        a = (ll + lh + hl + hh) / 2
-        b_ = (ll + lh - hl - hh) / 2
-        c_ = (ll - lh + hl - hh) / 2
-        d = (ll - lh - hl + hh) / 2
+        a = (ll - lh - hl + hh) / 2    # top-left
+        b_ = (ll - lh + hl - hh) / 2   # top-right
+        c_ = (ll + lh - hl - hh) / 2   # bottom-left
+        d = (ll + lh + hl + hh) / 2    # bottom-right
+        if self.legacy:
+            a, b_, c_, d = d, c_, b_, a
         top = torch.stack([a, b_], dim=-1).reshape(b, c, h, w * 2)
         bot = torch.stack([c_, d], dim=-1).reshape(b, c, h, w * 2)
         return torch.stack([top, bot], dim=-2).reshape(b, c, h * 2, w * 2)
@@ -61,10 +70,10 @@ class SEBlock(nn.Module):
 
 class WaveletAttention(nn.Module):
     """Wavelet frequency-domain attention: DWT -> SE per subband -> IDWT -> residual."""
-    def __init__(self, channels, reduction=8):
+    def __init__(self, channels, reduction=8, legacy_idwt=False):
         super().__init__()
         self.dwt = HaarDWT()
-        self.idwt = HaarIDWT()
+        self.idwt = HaarIDWT(legacy=legacy_idwt)
         self.se_ll = SEBlock(channels, reduction)
         self.se_lh = SEBlock(channels, reduction)
         self.se_hl = SEBlock(channels, reduction)

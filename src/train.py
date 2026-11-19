@@ -144,7 +144,8 @@ def main():
 
     model = ICHModel(cfg.backbone, cfg.use_wavelet, cfg.use_edl,
                      cfg.num_classes, cfg.pretrained, in_channels=1,
-                     wavelet_pos=cfg.wavelet_pos, se_reduction=cfg.se_reduction).to(device)
+                     wavelet_pos=cfg.wavelet_pos, se_reduction=cfg.se_reduction,
+                     se_only=cfg.se_only, idwt_legacy=cfg.idwt_legacy).to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=cfg.lr, weight_decay=cfg.weight_decay)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=cfg.epochs)
 

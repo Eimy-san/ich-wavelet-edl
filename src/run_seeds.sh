@@ -2,12 +2,13 @@
 # Multi-seed experiment queue: 4 configs x seeds {1,2,3,4} + SE-only x seeds {1,2,3,4}
 # Up to MAXPAR concurrent jobs; identical protocol to the paper (50 epochs, no early stop).
 set -u
-source /root/miniconda3/etc/profile.d/conda.sh
-conda activate base
-cd /root/autodl-tmp/ich_project/code
+ROOT="${ICH_ROOT:-$(dirname "$(dirname "$0")")}"
+# activate your Python environment with PyTorch installed, e.g.:
+# source /path/to/miniconda3/etc/profile.d/conda.sh && conda activate base
+cd "${ICH_CODE_DIR:-$(dirname "$0")}"
 MAXPAR=${MAXPAR:-1}
-OUT=/root/autodl-tmp/ich_project/runs_seeds
-LOGD=/root/autodl-tmp/ich_project/logs_seeds
+OUT=${ICH_OUTPUT_DIR:-$ROOT/runs_seeds}
+LOGD=${ICH_LOG_DIR:-$ROOT/logs_seeds}
 mkdir -p "$OUT" "$LOGD"
 
 CFG_BASE="--epochs 50 --patience 0 --output_dir $OUT"

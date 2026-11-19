@@ -17,7 +17,7 @@ class ICHDataset(Dataset):
         self.ww = ww
         self.augment = augment
         self.channels = channels
-        self.rescale = load_rescale_map()
+        self.rescale = load_rescale_map(rescale_csv)
 
     def __len__(self):
         return len(self.df)

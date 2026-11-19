@@ -9,13 +9,14 @@ from wavelet_attention import WaveletAttention, SEBlock, WaveletModuleSEOnly
 class ICHModel(nn.Module):
     def __init__(self, backbone='resnet50', use_wavelet=False, use_edl=False,
                  num_classes=2, pretrained=True, in_channels=1,
-                 wavelet_pos='layer2', se_reduction=8, se_only=False):
+                 wavelet_pos='layer2', se_reduction=8, se_only=False, idwt_legacy=False):
         super().__init__()
         self.use_wavelet = use_wavelet
         self.use_edl = use_edl
         self.num_classes = num_classes
         self.wavelet_pos = wavelet_pos
         self.se_only = se_only
+        self.idwt_legacy = idwt_legacy
 
         if in_channels == 1:
             self.expand = lambda x: x.repeat(1, 3, 1, 1)
@@ -34,10 +35,10 @@ class ICHModel(nn.Module):
             if use_wavelet:
                 if wavelet_pos in ('layer2', 'layer2_layer3'):
                     self.wavelet_l2 = (WaveletModuleSEOnly(512, se_reduction // 4)
-                                       if se_only else WaveletAttention(512, se_reduction))
+                                       if se_only else WaveletAttention(512, se_reduction, legacy_idwt=idwt_legacy))
                 if wavelet_pos in ('layer3', 'layer2_layer3'):
                     self.wavelet_l3 = (WaveletModuleSEOnly(1024, se_reduction // 4)
-                                       if se_only else WaveletAttention(1024, se_reduction))
+                                       if se_only else WaveletAttention(1024, se_reduction, legacy_idwt=idwt_legacy))
         elif backbone == 'efficientnet_b0':
             weights = models.EfficientNet_B0_Weights.DEFAULT if pretrained else None
             net = models.efficientnet_b0(weights=weights)
