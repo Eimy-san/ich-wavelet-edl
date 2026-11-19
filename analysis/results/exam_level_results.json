@@ -1,0 +1,270 @@
+{
+ "subtype_exam": {
+  "baseline": {
+   "epidural": {
+    "n_pos": 4,
+    "n_neg": 249,
+    "exam_sens": 1.0,
+    "exam_auc": 0.8338353413654618,
+    "exam_spec": 0.5381526104417671
+   },
+   "intraparenchymal": {
+    "n_pos": 59,
+    "n_neg": 194,
+    "exam_sens": 1.0,
+    "exam_auc": 0.9169142058361,
+    "exam_spec": 0.6907216494845361
+   },
+   "intraventricular": {
+    "n_pos": 40,
+    "n_neg": 213,
+    "exam_sens": 0.975,
+    "exam_auc": 0.8425469483568074,
+    "exam_spec": 0.6244131455399061
+   },
+   "subarachnoid": {
+    "n_pos": 42,
+    "n_neg": 211,
+    "exam_sens": 1.0,
+    "exam_auc": 0.8920108327691266,
+    "exam_spec": 0.6350710900473934
+   },
+   "subdural": {
+    "n_pos": 49,
+    "n_neg": 204,
+    "exam_sens": 0.9591836734693877,
+    "exam_auc": 0.8732993197278912,
+    "exam_spec": 0.6470588235294118
+   },
+   "any": {
+    "n_pos": 105,
+    "exam_sens": 0.9714285714285714,
+    "exam_auc": 0.9770913770913771,
+    "exam_spec": 0.8851351351351351
+   }
+  },
+  "wavelet_only": {
+   "epidural": {
+    "n_pos": 4,
+    "n_neg": 249,
+    "exam_sens": 1.0,
+    "exam_auc": 0.809738955823293,
+    "exam_spec": 0.5662650602409639
+   },
+   "intraparenchymal": {
+    "n_pos": 59,
+    "n_neg": 194,
+    "exam_sens": 1.0,
+    "exam_auc": 0.9232482963480692,
+    "exam_spec": 0.7268041237113402
+   },
+   "intraventricular": {
+    "n_pos": 40,
+    "n_neg": 213,
+    "exam_sens": 0.975,
+    "exam_auc": 0.859507042253521,
+    "exam_spec": 0.6572769953051644
+   },
+   "subarachnoid": {
+    "n_pos": 42,
+    "n_neg": 211,
+    "exam_sens": 1.0,
+    "exam_auc": 0.8750282103362673,
+    "exam_spec": 0.6682464454976303
+   },
+   "subdural": {
+    "n_pos": 49,
+    "n_neg": 204,
+    "exam_sens": 0.9183673469387755,
+    "exam_auc": 0.8585434173669468,
+    "exam_spec": 0.6715686274509803
+   },
+   "any": {
+    "n_pos": 105,
+    "exam_sens": 0.9523809523809523,
+    "exam_auc": 0.9837837837837837,
+    "exam_spec": 0.918918918918919
+   }
+  },
+  "edl_only": {
+   "epidural": {
+    "n_pos": 4,
+    "n_neg": 249,
+    "exam_sens": 0.75,
+    "exam_auc": 0.8162650602409639,
+    "exam_spec": 0.570281124497992
+   },
+   "intraparenchymal": {
+    "n_pos": 59,
+    "n_neg": 194,
+    "exam_sens": 1.0,
+    "exam_auc": 0.9114974663637951,
+    "exam_spec": 0.7371134020618557
+   },
+   "intraventricular": {
+    "n_pos": 40,
+    "n_neg": 213,
+    "exam_sens": 0.95,
+    "exam_auc": 0.8362676056338028,
+    "exam_spec": 0.6619718309859155
+   },
+   "subarachnoid": {
+    "n_pos": 42,
+    "n_neg": 211,
+    "exam_sens": 0.9761904761904762,
+    "exam_auc": 0.8994583615436696,
+    "exam_spec": 0.6729857819905213
+   },
+   "subdural": {
+    "n_pos": 49,
+    "n_neg": 204,
+    "exam_sens": 0.8775510204081632,
+    "exam_auc": 0.8751500600240096,
+    "exam_spec": 0.6715686274509803
+   },
+   "any": {
+    "n_pos": 105,
+    "exam_sens": 0.9238095238095239,
+    "exam_auc": 0.9686615186615186,
+    "exam_spec": 0.9121621621621622
+   }
+  },
+  "wavelet_edl": {
+   "epidural": {
+    "n_pos": 4,
+    "n_neg": 249,
+    "exam_sens": 1.0,
+    "exam_auc": 0.8333333333333334,
+    "exam_spec": 0.5381526104417671
+   },
+   "intraparenchymal": {
+    "n_pos": 59,
+    "n_neg": 194,
+    "exam_sens": 1.0,
+    "exam_auc": 0.9073912283767256,
+    "exam_spec": 0.6907216494845361
+   },
+   "intraventricular": {
+    "n_pos": 40,
+    "n_neg": 213,
+    "exam_sens": 0.925,
+    "exam_auc": 0.8265258215962442,
+    "exam_spec": 0.6150234741784038
+   },
+   "subarachnoid": {
+    "n_pos": 42,
+    "n_neg": 211,
+    "exam_sens": 1.0,
+    "exam_auc": 0.9034078086210788,
+    "exam_spec": 0.6350710900473934
+   },
+   "subdural": {
+    "n_pos": 49,
+    "n_neg": 204,
+    "exam_sens": 0.9387755102040817,
+    "exam_auc": 0.8711484593837535,
+    "exam_spec": 0.6421568627450981
+   },
+   "any": {
+    "n_pos": 105,
+    "exam_sens": 0.9523809523809523,
+    "exam_auc": 0.9774774774774775,
+    "exam_spec": 0.8716216216216216
+   }
+  }
+ },
+ "rule_ablation": {
+  "baseline": {
+   "max": {
+    "acc95": 0.925,
+    "deferred_pos": 10,
+    "deferred_neg": 3,
+    "sens_retained": 0.9684,
+    "aurc": 0.0355
+   },
+   "mean": {
+    "acc95": 0.925,
+    "deferred_pos": 11,
+    "deferred_neg": 2,
+    "sens_retained": 0.9681,
+    "aurc": 0.0404
+   },
+   "top3": {
+    "acc95": 0.925,
+    "deferred_pos": 11,
+    "deferred_neg": 2,
+    "sens_retained": 0.9681,
+    "aurc": 0.0375
+   }
+  },
+  "wavelet_only": {
+   "max": {
+    "acc95": 0.9375,
+    "deferred_pos": 12,
+    "deferred_neg": 1,
+    "sens_retained": 0.957,
+    "aurc": 0.0297
+   },
+   "mean": {
+    "acc95": 0.9292,
+    "deferred_pos": 13,
+    "deferred_neg": 0,
+    "sens_retained": 0.9457,
+    "aurc": 0.0321
+   },
+   "top3": {
+    "acc95": 0.9292,
+    "deferred_pos": 13,
+    "deferred_neg": 0,
+    "sens_retained": 0.9457,
+    "aurc": 0.0318
+   }
+  },
+  "edl_only": {
+   "max": {
+    "acc95": 0.925,
+    "deferred_pos": 10,
+    "deferred_neg": 3,
+    "sens_retained": 0.9158,
+    "aurc": 0.0409
+   },
+   "mean": {
+    "acc95": 0.9167,
+    "deferred_pos": 12,
+    "deferred_neg": 1,
+    "sens_retained": 0.914,
+    "aurc": 0.0466
+   },
+   "top3": {
+    "acc95": 0.9208,
+    "deferred_pos": 12,
+    "deferred_neg": 1,
+    "sens_retained": 0.9247,
+    "aurc": 0.0424
+   }
+  },
+  "wavelet_edl": {
+   "max": {
+    "acc95": 0.9125,
+    "deferred_pos": 10,
+    "deferred_neg": 3,
+    "sens_retained": 0.9474,
+    "aurc": 0.0392
+   },
+   "mean": {
+    "acc95": 0.9042,
+    "deferred_pos": 12,
+    "deferred_neg": 1,
+    "sens_retained": 0.9462,
+    "aurc": 0.048
+   },
+   "top3": {
+    "acc95": 0.9083,
+    "deferred_pos": 11,
+    "deferred_neg": 2,
+    "sens_retained": 0.9468,
+    "aurc": 0.0405
+   }
+  }
+ }
+}
