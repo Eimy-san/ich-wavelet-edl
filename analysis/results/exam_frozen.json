@@ -1,0 +1,1192 @@
+{
+ "baseline": {
+  "per_seed": {
+   "42": {
+    "frozen": {
+     "aurc": 0.02187325248336947,
+     "acc": 0.9416666666666667,
+     "sens": 0.9306930693069307,
+     "spec": 0.9496402877697842,
+     "fn_retained": 7,
+     "deferred_pos": 4,
+     "deferred_neg": 9
+    },
+    "prespec": {
+     "aurc": 0.03549613925056498,
+     "acc": 0.925,
+     "sens": 0.968421052631579,
+     "spec": 0.896551724137931,
+     "fn_retained": 3,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    },
+    "frozen_val": {
+     "aurc": 0.03657665048369987,
+     "acc": 0.9166666666666666,
+     "sens": 0.9215686274509803,
+     "spec": 0.9130434782608695,
+     "fn_retained": 8,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.11631925995792959,
+     "acc": 0.8333333333333334,
+     "sens": 0.9263157894736842,
+     "spec": 0.7724137931034483,
+     "fn_retained": 7,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    }
+   },
+   "1": {
+    "frozen": {
+     "aurc": 0.03312756160307527,
+     "acc": 0.8958333333333334,
+     "sens": 0.9611650485436893,
+     "spec": 0.8467153284671532,
+     "fn_retained": 4,
+     "deferred_pos": 2,
+     "deferred_neg": 11
+    },
+    "prespec": {
+     "aurc": 0.12239329782943274,
+     "acc": 0.8,
+     "sens": 0.96875,
+     "spec": 0.6875,
+     "fn_retained": 3,
+     "deferred_pos": 9,
+     "deferred_neg": 4
+    },
+    "frozen_val": {
+     "aurc": 0.04470769245691073,
+     "acc": 0.8791666666666667,
+     "sens": 0.9238095238095239,
+     "spec": 0.8444444444444444,
+     "fn_retained": 8,
+     "deferred_pos": 0,
+     "deferred_neg": 13
+    },
+    "prespec_val": {
+     "aurc": 0.16172778048878608,
+     "acc": 0.7541666666666667,
+     "sens": 0.9361702127659575,
+     "spec": 0.636986301369863,
+     "fn_retained": 6,
+     "deferred_pos": 11,
+     "deferred_neg": 2
+    }
+   },
+   "2": {
+    "frozen": {
+     "aurc": 0.019199858318030085,
+     "acc": 0.9458333333333333,
+     "sens": 0.9207920792079208,
+     "spec": 0.9640287769784173,
+     "fn_retained": 8,
+     "deferred_pos": 4,
+     "deferred_neg": 9
+    },
+    "prespec": {
+     "aurc": 0.053743482010617974,
+     "acc": 0.8916666666666667,
+     "sens": 0.9166666666666666,
+     "spec": 0.875,
+     "fn_retained": 8,
+     "deferred_pos": 9,
+     "deferred_neg": 4
+    },
+    "frozen_val": {
+     "aurc": 0.03369769295079168,
+     "acc": 0.9333333333333333,
+     "sens": 0.9117647058823529,
+     "spec": 0.9492753623188406,
+     "fn_retained": 9,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.08254448349398302,
+     "acc": 0.8666666666666667,
+     "sens": 0.9148936170212766,
+     "spec": 0.8356164383561644,
+     "fn_retained": 8,
+     "deferred_pos": 11,
+     "deferred_neg": 2
+    }
+   },
+   "3": {
+    "frozen": {
+     "aurc": 0.015863761245046317,
+     "acc": 0.9458333333333333,
+     "sens": 0.898989898989899,
+     "spec": 0.9787234042553191,
+     "fn_retained": 10,
+     "deferred_pos": 6,
+     "deferred_neg": 7
+    },
+    "prespec": {
+     "aurc": 0.05794933830227454,
+     "acc": 0.8958333333333334,
+     "sens": 0.9157894736842105,
+     "spec": 0.8827586206896552,
+     "fn_retained": 8,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    },
+    "frozen_val": {
+     "aurc": 0.030179017608747624,
+     "acc": 0.9333333333333333,
+     "sens": 0.9207920792079208,
+     "spec": 0.9424460431654677,
+     "fn_retained": 8,
+     "deferred_pos": 4,
+     "deferred_neg": 9
+    },
+    "prespec_val": {
+     "aurc": 0.07468507099411066,
+     "acc": 0.8708333333333333,
+     "sens": 0.8924731182795699,
+     "spec": 0.8571428571428571,
+     "fn_retained": 10,
+     "deferred_pos": 12,
+     "deferred_neg": 1
+    }
+   },
+   "4": {
+    "frozen": {
+     "aurc": 0.02071040422312557,
+     "acc": 0.9166666666666666,
+     "sens": 0.9504950495049505,
+     "spec": 0.8920863309352518,
+     "fn_retained": 5,
+     "deferred_pos": 4,
+     "deferred_neg": 9
+    },
+    "prespec": {
+     "aurc": 0.07144015837181686,
+     "acc": 0.8625,
+     "sens": 0.9789473684210527,
+     "spec": 0.7862068965517242,
+     "fn_retained": 2,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    },
+    "frozen_val": {
+     "aurc": 0.04629232668126898,
+     "acc": 0.9083333333333333,
+     "sens": 0.9411764705882353,
+     "spec": 0.8840579710144928,
+     "fn_retained": 6,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.10556585428333687,
+     "acc": 0.825,
+     "sens": 0.968421052631579,
+     "spec": 0.7310344827586207,
+     "fn_retained": 3,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    }
+   }
+  },
+  "agg": {
+   "aurc": {
+    "frozen_mean": 0.022154967574529345,
+    "frozen_sd": 0.006535975332382741,
+    "prespec_mean": 0.06820448315294143,
+    "prespec_sd": 0.032905248597099715
+   },
+   "acc": {
+    "frozen_mean": 0.9291666666666666,
+    "frozen_sd": 0.02224391302506521,
+    "prespec_mean": 0.875,
+    "prespec_sd": 0.04741586115308768
+   },
+   "sens": {
+    "frozen_mean": 0.932427029110678,
+    "frozen_sd": 0.02453949606478589,
+    "prespec_mean": 0.9497149122807016,
+    "prespec_sd": 0.0308622449986854
+   },
+   "spec": {
+    "frozen_mean": 0.9262388256811851,
+    "frozen_sd": 0.055273681218001254,
+    "prespec_mean": 0.8256034482758621,
+    "prespec_sd": 0.08855089160635606
+   },
+   "fn_retained": {
+    "frozen_mean": 6.8,
+    "frozen_sd": 2.3874672772626644,
+    "prespec_mean": 4.8,
+    "prespec_sd": 2.949576240750525
+   },
+   "deferred_pos": {
+    "frozen_mean": 4.0,
+    "frozen_sd": 1.4142135623730951,
+    "prespec_mean": 9.6,
+    "prespec_sd": 0.5477225575051662
+   },
+   "deferred_neg": {
+    "frozen_mean": 9.0,
+    "frozen_sd": 1.4142135623730951,
+    "prespec_mean": 3.4,
+    "prespec_sd": 0.5477225575051661
+   }
+  }
+ },
+ "wavelet_only": {
+  "per_seed": {
+   "42": {
+    "frozen": {
+     "aurc": 0.009551032262293254,
+     "acc": 0.9541666666666667,
+     "sens": 0.9183673469387755,
+     "spec": 0.9788732394366197,
+     "fn_retained": 8,
+     "deferred_pos": 7,
+     "deferred_neg": 6
+    },
+    "prespec": {
+     "aurc": 0.029664611104849466,
+     "acc": 0.9375,
+     "sens": 0.956989247311828,
+     "spec": 0.9251700680272109,
+     "fn_retained": 4,
+     "deferred_pos": 12,
+     "deferred_neg": 1
+    },
+    "frozen_val": {
+     "aurc": 0.03257677714874535,
+     "acc": 0.9416666666666667,
+     "sens": 0.900990099009901,
+     "spec": 0.9712230215827338,
+     "fn_retained": 10,
+     "deferred_pos": 4,
+     "deferred_neg": 9
+    },
+    "prespec_val": {
+     "aurc": 0.07239388566811514,
+     "acc": 0.9,
+     "sens": 0.9042553191489362,
+     "spec": 0.8972602739726028,
+     "fn_retained": 9,
+     "deferred_pos": 11,
+     "deferred_neg": 2
+    }
+   },
+   "1": {
+    "frozen": {
+     "aurc": 0.021671994125163643,
+     "acc": 0.95,
+     "sens": 0.9285714285714286,
+     "spec": 0.9647887323943662,
+     "fn_retained": 7,
+     "deferred_pos": 7,
+     "deferred_neg": 6
+    },
+    "prespec": {
+     "aurc": 0.0442739574206982,
+     "acc": 0.9125,
+     "sens": 0.9354838709677419,
+     "spec": 0.8979591836734694,
+     "fn_retained": 6,
+     "deferred_pos": 12,
+     "deferred_neg": 1
+    },
+    "frozen_val": {
+     "aurc": 0.027721234980401296,
+     "acc": 0.9375,
+     "sens": 0.9215686274509803,
+     "spec": 0.9492753623188406,
+     "fn_retained": 8,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.06361445088568729,
+     "acc": 0.875,
+     "sens": 0.9139784946236559,
+     "spec": 0.8503401360544217,
+     "fn_retained": 8,
+     "deferred_pos": 12,
+     "deferred_neg": 1
+    }
+   },
+   "2": {
+    "frozen": {
+     "aurc": 0.02221385885431335,
+     "acc": 0.9291666666666667,
+     "sens": 0.92,
+     "spec": 0.9357142857142857,
+     "fn_retained": 8,
+     "deferred_pos": 5,
+     "deferred_neg": 8
+    },
+    "prespec": {
+     "aurc": 0.05682370793208714,
+     "acc": 0.8875,
+     "sens": 0.9479166666666666,
+     "spec": 0.8472222222222222,
+     "fn_retained": 5,
+     "deferred_pos": 9,
+     "deferred_neg": 4
+    },
+    "frozen_val": {
+     "aurc": 0.031050798690818823,
+     "acc": 0.9333333333333333,
+     "sens": 0.941747572815534,
+     "spec": 0.927007299270073,
+     "fn_retained": 6,
+     "deferred_pos": 2,
+     "deferred_neg": 11
+    },
+    "prespec_val": {
+     "aurc": 0.08147797769516892,
+     "acc": 0.8583333333333333,
+     "sens": 0.9361702127659575,
+     "spec": 0.8082191780821918,
+     "fn_retained": 6,
+     "deferred_pos": 11,
+     "deferred_neg": 2
+    }
+   },
+   "3": {
+    "frozen": {
+     "aurc": 0.012412745750974433,
+     "acc": 0.9416666666666667,
+     "sens": 0.92,
+     "spec": 0.9571428571428572,
+     "fn_retained": 8,
+     "deferred_pos": 5,
+     "deferred_neg": 8
+    },
+    "prespec": {
+     "aurc": 0.0418165265557051,
+     "acc": 0.9,
+     "sens": 0.9263157894736842,
+     "spec": 0.8827586206896552,
+     "fn_retained": 7,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    },
+    "frozen_val": {
+     "aurc": 0.030111701491703283,
+     "acc": 0.9333333333333333,
+     "sens": 0.9215686274509803,
+     "spec": 0.9420289855072463,
+     "fn_retained": 8,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.07977377439154533,
+     "acc": 0.8625,
+     "sens": 0.9157894736842105,
+     "spec": 0.8275862068965517,
+     "fn_retained": 8,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    }
+   },
+   "4": {
+    "frozen": {
+     "aurc": 0.012413267658749193,
+     "acc": 0.9458333333333333,
+     "sens": 0.93,
+     "spec": 0.9571428571428572,
+     "fn_retained": 7,
+     "deferred_pos": 5,
+     "deferred_neg": 8
+    },
+    "prespec": {
+     "aurc": 0.05244079253915273,
+     "acc": 0.8833333333333333,
+     "sens": 0.9473684210526315,
+     "spec": 0.8413793103448276,
+     "fn_retained": 5,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    },
+    "frozen_val": {
+     "aurc": 0.03103513771267736,
+     "acc": 0.9125,
+     "sens": 0.9019607843137255,
+     "spec": 0.9202898550724637,
+     "fn_retained": 10,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.07127906054757888,
+     "acc": 0.8833333333333333,
+     "sens": 0.9368421052631579,
+     "spec": 0.8482758620689655,
+     "fn_retained": 6,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    }
+   }
+  },
+  "agg": {
+   "aurc": {
+    "frozen_mean": 0.015652579730298776,
+    "frozen_sd": 0.005863068348039528,
+    "prespec_mean": 0.04500391911049852,
+    "prespec_sd": 0.010500014043322419
+   },
+   "acc": {
+    "frozen_mean": 0.9441666666666666,
+    "frozen_sd": 0.009592387027684444,
+    "prespec_mean": 0.9041666666666666,
+    "prespec_sd": 0.02185018433687817
+   },
+   "sens": {
+    "frozen_mean": 0.9233877551020407,
+    "frozen_sd": 0.005448635623172329,
+    "prespec_mean": 0.9428147990945105,
+    "prespec_sd": 0.011975384478114694
+   },
+   "spec": {
+    "frozen_mean": 0.9587323943661973,
+    "frozen_sd": 0.015630254744742486,
+    "prespec_mean": 0.878897880991477,
+    "prespec_sd": 0.03510820547199561
+   },
+   "fn_retained": {
+    "frozen_mean": 7.6,
+    "frozen_sd": 0.5477225575051661,
+    "prespec_mean": 5.4,
+    "prespec_sd": 1.1401754250991378
+   },
+   "deferred_pos": {
+    "frozen_mean": 5.8,
+    "frozen_sd": 1.0954451150103321,
+    "prespec_mean": 10.6,
+    "prespec_sd": 1.3416407864998738
+   },
+   "deferred_neg": {
+    "frozen_mean": 7.2,
+    "frozen_sd": 1.0954451150103321,
+    "prespec_mean": 2.4,
+    "prespec_sd": 1.3416407864998738
+   }
+  }
+ },
+ "edl_only": {
+  "per_seed": {
+   "42": {
+    "frozen": {
+     "aurc": 0.024031750596004178,
+     "acc": 0.9291666666666667,
+     "sens": 0.88,
+     "spec": 0.9642857142857143,
+     "fn_retained": 12,
+     "deferred_pos": 5,
+     "deferred_neg": 8
+    },
+    "prespec": {
+     "aurc": 0.040790536250155905,
+     "acc": 0.9166666666666666,
+     "sens": 0.9247311827956989,
+     "spec": 0.9115646258503401,
+     "fn_retained": 7,
+     "deferred_pos": 12,
+     "deferred_neg": 1
+    },
+    "frozen_val": {
+     "aurc": 0.03322135738858445,
+     "acc": 0.9125,
+     "sens": 0.900990099009901,
+     "spec": 0.920863309352518,
+     "fn_retained": 10,
+     "deferred_pos": 4,
+     "deferred_neg": 9
+    },
+    "prespec_val": {
+     "aurc": 0.05277892674315757,
+     "acc": 0.8916666666666667,
+     "sens": 0.9052631578947369,
+     "spec": 0.8827586206896552,
+     "fn_retained": 9,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    }
+   },
+   "1": {
+    "frozen": {
+     "aurc": 0.015579556337883431,
+     "acc": 0.95,
+     "sens": 0.93,
+     "spec": 0.9642857142857143,
+     "fn_retained": 7,
+     "deferred_pos": 5,
+     "deferred_neg": 8
+    },
+    "prespec": {
+     "aurc": 0.05198008295179207,
+     "acc": 0.9,
+     "sens": 0.9578947368421052,
+     "spec": 0.8620689655172413,
+     "fn_retained": 4,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    },
+    "frozen_val": {
+     "aurc": 0.02988635939710391,
+     "acc": 0.925,
+     "sens": 0.9313725490196079,
+     "spec": 0.9202898550724637,
+     "fn_retained": 7,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.06830212186113414,
+     "acc": 0.8666666666666667,
+     "sens": 0.9148936170212766,
+     "spec": 0.8356164383561644,
+     "fn_retained": 8,
+     "deferred_pos": 11,
+     "deferred_neg": 2
+    }
+   },
+   "2": {
+    "frozen": {
+     "aurc": 0.041978412743308116,
+     "acc": 0.8875,
+     "sens": 0.9523809523809523,
+     "spec": 0.837037037037037,
+     "fn_retained": 5,
+     "deferred_pos": 0,
+     "deferred_neg": 13
+    },
+    "prespec": {
+     "aurc": 0.08150454780498254,
+     "acc": 0.85,
+     "sens": 0.9803921568627451,
+     "spec": 0.7536231884057971,
+     "fn_retained": 2,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "frozen_val": {
+     "aurc": 0.061099624788433476,
+     "acc": 0.8625,
+     "sens": 0.9333333333333333,
+     "spec": 0.8074074074074075,
+     "fn_retained": 7,
+     "deferred_pos": 0,
+     "deferred_neg": 13
+    },
+    "prespec_val": {
+     "aurc": 0.15523554842613452,
+     "acc": 0.7791666666666667,
+     "sens": 0.9514563106796117,
+     "spec": 0.6496350364963503,
+     "fn_retained": 5,
+     "deferred_pos": 2,
+     "deferred_neg": 11
+    }
+   },
+   "3": {
+    "frozen": {
+     "aurc": 0.024838199238035333,
+     "acc": 0.925,
+     "sens": 0.9615384615384616,
+     "spec": 0.8970588235294118,
+     "fn_retained": 4,
+     "deferred_pos": 1,
+     "deferred_neg": 12
+    },
+    "prespec": {
+     "aurc": 0.10098582521881747,
+     "acc": 0.8333333333333334,
+     "sens": 0.9583333333333334,
+     "spec": 0.75,
+     "fn_retained": 4,
+     "deferred_pos": 9,
+     "deferred_neg": 4
+    },
+    "frozen_val": {
+     "aurc": 0.04725769115878523,
+     "acc": 0.8833333333333333,
+     "sens": 0.9411764705882353,
+     "spec": 0.8405797101449275,
+     "fn_retained": 6,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.1427290020620778,
+     "acc": 0.7833333333333333,
+     "sens": 0.9595959595959596,
+     "spec": 0.6595744680851063,
+     "fn_retained": 4,
+     "deferred_pos": 6,
+     "deferred_neg": 7
+    }
+   },
+   "4": {
+    "frozen": {
+     "aurc": 0.032658563802751346,
+     "acc": 0.9,
+     "sens": 0.9038461538461539,
+     "spec": 0.8970588235294118,
+     "fn_retained": 10,
+     "deferred_pos": 1,
+     "deferred_neg": 12
+    },
+    "prespec": {
+     "aurc": 0.07852822937129388,
+     "acc": 0.8625,
+     "sens": 0.9081632653061225,
+     "spec": 0.8309859154929577,
+     "fn_retained": 9,
+     "deferred_pos": 7,
+     "deferred_neg": 6
+    },
+    "frozen_val": {
+     "aurc": 0.0381710103284366,
+     "acc": 0.9083333333333333,
+     "sens": 0.912621359223301,
+     "spec": 0.9051094890510949,
+     "fn_retained": 9,
+     "deferred_pos": 2,
+     "deferred_neg": 11
+    },
+    "prespec_val": {
+     "aurc": 0.08312584796445327,
+     "acc": 0.8666666666666667,
+     "sens": 0.92,
+     "spec": 0.8285714285714286,
+     "fn_retained": 8,
+     "deferred_pos": 5,
+     "deferred_neg": 8
+    }
+   }
+  },
+  "agg": {
+   "aurc": {
+    "frozen_mean": 0.027817296543596482,
+    "frozen_sd": 0.009961711009110835,
+    "prespec_mean": 0.07075784431940838,
+    "prespec_sd": 0.024188040556301194
+   },
+   "acc": {
+    "frozen_mean": 0.9183333333333333,
+    "frozen_sd": 0.024755751295854916,
+    "prespec_mean": 0.8724999999999999,
+    "prespec_sd": 0.034810997623675684
+   },
+   "sens": {
+    "frozen_mean": 0.9255531135531136,
+    "frozen_sd": 0.033840549858760484,
+    "prespec_mean": 0.945902935028001,
+    "prespec_sd": 0.028984264260312937
+   },
+   "spec": {
+    "frozen_mean": 0.9119452225334579,
+    "frozen_sd": 0.05369706732848073,
+    "prespec_mean": 0.8216485390532673,
+    "prespec_sd": 0.06994079928479441
+   },
+   "fn_retained": {
+    "frozen_mean": 7.6,
+    "frozen_sd": 3.361547262794322,
+    "prespec_mean": 5.2,
+    "prespec_sd": 2.7748873851023217
+   },
+   "deferred_pos": {
+    "frozen_mean": 2.4,
+    "frozen_sd": 2.4083189157584592,
+    "prespec_mean": 8.2,
+    "prespec_sd": 3.420526275297414
+   },
+   "deferred_neg": {
+    "frozen_mean": 10.6,
+    "frozen_sd": 2.4083189157584592,
+    "prespec_mean": 4.8,
+    "prespec_sd": 3.420526275297414
+   }
+  }
+ },
+ "wavelet_edl": {
+  "per_seed": {
+   "42": {
+    "frozen": {
+     "aurc": 0.01386846854859274,
+     "acc": 0.9375,
+     "sens": 0.9108910891089109,
+     "spec": 0.9568345323741008,
+     "fn_retained": 9,
+     "deferred_pos": 4,
+     "deferred_neg": 9
+    },
+    "prespec": {
+     "aurc": 0.03443807559954233,
+     "acc": 0.9166666666666666,
+     "sens": 0.9494949494949495,
+     "spec": 0.8936170212765957,
+     "fn_retained": 5,
+     "deferred_pos": 6,
+     "deferred_neg": 7
+    },
+    "frozen_val": {
+     "aurc": 0.03299725359193421,
+     "acc": 0.9333333333333333,
+     "sens": 0.9215686274509803,
+     "spec": 0.9420289855072463,
+     "fn_retained": 8,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.0764483825987524,
+     "acc": 0.875,
+     "sens": 0.9468085106382979,
+     "spec": 0.8287671232876712,
+     "fn_retained": 5,
+     "deferred_pos": 11,
+     "deferred_neg": 2
+    }
+   },
+   "1": {
+    "frozen": {
+     "aurc": 0.08954811219126275,
+     "acc": 0.825,
+     "sens": 0.9423076923076923,
+     "spec": 0.7352941176470589,
+     "fn_retained": 6,
+     "deferred_pos": 1,
+     "deferred_neg": 12
+    },
+    "prespec": {
+     "aurc": 0.25657260034853613,
+     "acc": 0.7416666666666667,
+     "sens": 0.9705882352941176,
+     "spec": 0.572463768115942,
+     "fn_retained": 3,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "frozen_val": {
+     "aurc": 0.09799214118681839,
+     "acc": 0.8083333333333333,
+     "sens": 0.9611650485436893,
+     "spec": 0.6934306569343066,
+     "fn_retained": 4,
+     "deferred_pos": 2,
+     "deferred_neg": 11
+    },
+    "prespec_val": {
+     "aurc": 0.21831439669031366,
+     "acc": 0.7166666666666667,
+     "sens": 0.9587628865979382,
+     "spec": 0.5524475524475524,
+     "fn_retained": 4,
+     "deferred_pos": 8,
+     "deferred_neg": 5
+    }
+   },
+   "2": {
+    "frozen": {
+     "aurc": 0.058785193567240206,
+     "acc": 0.875,
+     "sens": 0.9428571428571428,
+     "spec": 0.8222222222222222,
+     "fn_retained": 6,
+     "deferred_pos": 0,
+     "deferred_neg": 13
+    },
+    "prespec": {
+     "aurc": 0.15029551920814754,
+     "acc": 0.7833333333333333,
+     "sens": 0.9489795918367347,
+     "spec": 0.6690140845070423,
+     "fn_retained": 5,
+     "deferred_pos": 7,
+     "deferred_neg": 6
+    },
+    "frozen_val": {
+     "aurc": 0.09177792240724039,
+     "acc": 0.7958333333333333,
+     "sens": 0.9615384615384616,
+     "spec": 0.6691176470588235,
+     "fn_retained": 4,
+     "deferred_pos": 1,
+     "deferred_neg": 12
+    },
+    "prespec_val": {
+     "aurc": 0.1730766668734472,
+     "acc": 0.725,
+     "sens": 0.9494949494949495,
+     "spec": 0.5673758865248227,
+     "fn_retained": 5,
+     "deferred_pos": 6,
+     "deferred_neg": 7
+    }
+   },
+   "3": {
+    "frozen": {
+     "aurc": 0.03556477681034674,
+     "acc": 0.9041666666666667,
+     "sens": 0.9523809523809523,
+     "spec": 0.8666666666666667,
+     "fn_retained": 5,
+     "deferred_pos": 0,
+     "deferred_neg": 13
+    },
+    "prespec": {
+     "aurc": 0.0951347415446695,
+     "acc": 0.8541666666666666,
+     "sens": 0.98,
+     "spec": 0.7642857142857142,
+     "fn_retained": 2,
+     "deferred_pos": 5,
+     "deferred_neg": 8
+    },
+    "frozen_val": {
+     "aurc": 0.04948428823889688,
+     "acc": 0.8875,
+     "sens": 0.9238095238095239,
+     "spec": 0.8592592592592593,
+     "fn_retained": 8,
+     "deferred_pos": 0,
+     "deferred_neg": 13
+    },
+    "prespec_val": {
+     "aurc": 0.15356315791927583,
+     "acc": 0.7833333333333333,
+     "sens": 0.96,
+     "spec": 0.6571428571428571,
+     "fn_retained": 4,
+     "deferred_pos": 5,
+     "deferred_neg": 8
+    }
+   },
+   "4": {
+    "frozen": {
+     "aurc": 0.01335724700045173,
+     "acc": 0.9375,
+     "sens": 0.9019607843137255,
+     "spec": 0.9637681159420289,
+     "fn_retained": 10,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec": {
+     "aurc": 0.06473050421906507,
+     "acc": 0.8708333333333333,
+     "sens": 0.9042553191489362,
+     "spec": 0.8493150684931506,
+     "fn_retained": 9,
+     "deferred_pos": 11,
+     "deferred_neg": 2
+    },
+    "frozen_val": {
+     "aurc": 0.02445697850331414,
+     "acc": 0.925,
+     "sens": 0.9019607843137255,
+     "spec": 0.9420289855072463,
+     "fn_retained": 10,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.09028502032173732,
+     "acc": 0.8458333333333333,
+     "sens": 0.9032258064516129,
+     "spec": 0.8095238095238095,
+     "fn_retained": 9,
+     "deferred_pos": 12,
+     "deferred_neg": 1
+    }
+   }
+  },
+  "agg": {
+   "aurc": {
+    "frozen_mean": 0.04222475962357884,
+    "frozen_sd": 0.03238639980877766,
+    "prespec_mean": 0.12023428818399214,
+    "prespec_sd": 0.0874120419969772
+   },
+   "acc": {
+    "frozen_mean": 0.8958333333333334,
+    "frozen_sd": 0.04741586115308769,
+    "prespec_mean": 0.8333333333333333,
+    "prespec_sd": 0.07015607600201139
+   },
+   "sens": {
+    "frozen_mean": 0.930079532193685,
+    "frozen_sd": 0.022186757913021597,
+    "prespec_mean": 0.9506636191549476,
+    "prespec_sd": 0.02922133473855137
+   },
+   "spec": {
+    "frozen_mean": 0.8689571309704155,
+    "frozen_sd": 0.09587330129115776,
+    "prespec_mean": 0.7497391313356889,
+    "prespec_sd": 0.1311210367755083
+   },
+   "fn_retained": {
+    "frozen_mean": 7.2,
+    "frozen_sd": 2.16794833886788,
+    "prespec_mean": 4.8,
+    "prespec_sd": 2.6832815729997477
+   },
+   "deferred_pos": {
+    "frozen_mean": 1.6,
+    "frozen_sd": 1.816590212458495,
+    "prespec_mean": 6.4,
+    "prespec_sd": 2.9664793948382653
+   },
+   "deferred_neg": {
+    "frozen_mean": 11.4,
+    "frozen_sd": 1.816590212458495,
+    "prespec_mean": 6.6,
+    "prespec_sd": 2.9664793948382653
+   }
+  }
+ },
+ "se_only": {
+  "per_seed": {
+   "42": {
+    "frozen": {
+     "aurc": 0.016845576604678933,
+     "acc": 0.9458333333333333,
+     "sens": 0.9313725490196079,
+     "spec": 0.9565217391304348,
+     "fn_retained": 7,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec": {
+     "aurc": 0.04512200187867472,
+     "acc": 0.8875,
+     "sens": 0.9565217391304348,
+     "spec": 0.8445945945945946,
+     "fn_retained": 4,
+     "deferred_pos": 13,
+     "deferred_neg": 0
+    },
+    "frozen_val": {
+     "aurc": 0.03129054742421453,
+     "acc": 0.9291666666666667,
+     "sens": 0.9405940594059405,
+     "spec": 0.920863309352518,
+     "fn_retained": 6,
+     "deferred_pos": 4,
+     "deferred_neg": 9
+    },
+    "prespec_val": {
+     "aurc": 0.09715527569345259,
+     "acc": 0.8416666666666667,
+     "sens": 0.9354838709677419,
+     "spec": 0.782312925170068,
+     "fn_retained": 6,
+     "deferred_pos": 12,
+     "deferred_neg": 1
+    }
+   },
+   "1": {
+    "frozen": {
+     "aurc": 0.022725284905785577,
+     "acc": 0.9125,
+     "sens": 0.9223300970873787,
+     "spec": 0.9051094890510949,
+     "fn_retained": 8,
+     "deferred_pos": 2,
+     "deferred_neg": 11
+    },
+    "prespec": {
+     "aurc": 0.08161885994771709,
+     "acc": 0.8333333333333334,
+     "sens": 0.9578947368421052,
+     "spec": 0.7517241379310344,
+     "fn_retained": 4,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    },
+    "frozen_val": {
+     "aurc": 0.04396626599091726,
+     "acc": 0.8875,
+     "sens": 0.9223300970873787,
+     "spec": 0.8613138686131386,
+     "fn_retained": 8,
+     "deferred_pos": 2,
+     "deferred_neg": 11
+    },
+    "prespec_val": {
+     "aurc": 0.09166848362993398,
+     "acc": 0.8333333333333334,
+     "sens": 0.9473684210526315,
+     "spec": 0.7586206896551724,
+     "fn_retained": 5,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    }
+   },
+   "2": {
+    "frozen": {
+     "aurc": 0.013071202259907825,
+     "acc": 0.95,
+     "sens": 0.9183673469387755,
+     "spec": 0.971830985915493,
+     "fn_retained": 8,
+     "deferred_pos": 7,
+     "deferred_neg": 6
+    },
+    "prespec": {
+     "aurc": 0.04549806378534059,
+     "acc": 0.9041666666666667,
+     "sens": 0.925531914893617,
+     "spec": 0.8904109589041096,
+     "fn_retained": 7,
+     "deferred_pos": 11,
+     "deferred_neg": 2
+    },
+    "frozen_val": {
+     "aurc": 0.02354873729875879,
+     "acc": 0.9291666666666667,
+     "sens": 0.8921568627450981,
+     "spec": 0.9565217391304348,
+     "fn_retained": 11,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.050147349784286505,
+     "acc": 0.8958333333333334,
+     "sens": 0.925531914893617,
+     "spec": 0.8767123287671232,
+     "fn_retained": 7,
+     "deferred_pos": 11,
+     "deferred_neg": 2
+    }
+   },
+   "3": {
+    "frozen": {
+     "aurc": 0.01686718674516319,
+     "acc": 0.95,
+     "sens": 0.9603960396039604,
+     "spec": 0.9424460431654677,
+     "fn_retained": 4,
+     "deferred_pos": 4,
+     "deferred_neg": 9
+    },
+    "prespec": {
+     "aurc": 0.05413475398143873,
+     "acc": 0.8833333333333333,
+     "sens": 0.968421052631579,
+     "spec": 0.8275862068965517,
+     "fn_retained": 3,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    },
+    "frozen_val": {
+     "aurc": 0.03984145234791022,
+     "acc": 0.9125,
+     "sens": 0.9223300970873787,
+     "spec": 0.9051094890510949,
+     "fn_retained": 8,
+     "deferred_pos": 2,
+     "deferred_neg": 11
+    },
+    "prespec_val": {
+     "aurc": 0.09875959697071876,
+     "acc": 0.8458333333333333,
+     "sens": 0.9368421052631579,
+     "spec": 0.7862068965517242,
+     "fn_retained": 6,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    }
+   },
+   "4": {
+    "frozen": {
+     "aurc": 0.017149779606918616,
+     "acc": 0.9291666666666667,
+     "sens": 0.900990099009901,
+     "spec": 0.9496402877697842,
+     "fn_retained": 10,
+     "deferred_pos": 4,
+     "deferred_neg": 9
+    },
+    "prespec": {
+     "aurc": 0.05411044223700332,
+     "acc": 0.8708333333333333,
+     "sens": 0.9375,
+     "spec": 0.8263888888888888,
+     "fn_retained": 6,
+     "deferred_pos": 9,
+     "deferred_neg": 4
+    },
+    "frozen_val": {
+     "aurc": 0.03168599010541931,
+     "acc": 0.9291666666666667,
+     "sens": 0.9117647058823529,
+     "spec": 0.9420289855072463,
+     "fn_retained": 9,
+     "deferred_pos": 3,
+     "deferred_neg": 10
+    },
+    "prespec_val": {
+     "aurc": 0.0891292521439684,
+     "acc": 0.8625,
+     "sens": 0.9368421052631579,
+     "spec": 0.8137931034482758,
+     "fn_retained": 6,
+     "deferred_pos": 10,
+     "deferred_neg": 3
+    }
+   }
+  },
+  "agg": {
+   "aurc": {
+    "frozen_mean": 0.017331806024490828,
+    "frozen_sd": 0.0034542648502199074,
+    "prespec_mean": 0.05609682436603489,
+    "prespec_sd": 0.01493276756720973
+   },
+   "acc": {
+    "frozen_mean": 0.9375,
+    "frozen_sd": 0.016404183070857923,
+    "prespec_mean": 0.8758333333333332,
+    "prespec_sd": 0.02658189651289428
+   },
+   "sens": {
+    "frozen_mean": 0.9266912263319247,
+    "frozen_sd": 0.021833366562850592,
+    "prespec_mean": 0.9491738886995471,
+    "prespec_sd": 0.017289592393376893
+   },
+   "spec": {
+    "frozen_mean": 0.9451097090064549,
+    "frozen_sd": 0.024859102595027795,
+    "prespec_mean": 0.828140957443036,
+    "prespec_sd": 0.049977952774684406
+   },
+   "fn_retained": {
+    "frozen_mean": 7.4,
+    "frozen_sd": 2.1908902300206643,
+    "prespec_mean": 4.8,
+    "prespec_sd": 1.6431676725154984
+   },
+   "deferred_pos": {
+    "frozen_mean": 4.0,
+    "frozen_sd": 1.8708286933869707,
+    "prespec_mean": 10.6,
+    "prespec_sd": 1.51657508881031
+   },
+   "deferred_neg": {
+    "frozen_mean": 9.0,
+    "frozen_sd": 1.8708286933869707,
+    "prespec_mean": 2.4,
+    "prespec_sd": 1.5165750888103102
+   }
+  }
+ }
+}

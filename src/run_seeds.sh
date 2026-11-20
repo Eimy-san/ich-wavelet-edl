@@ -1,5 +1,8 @@
 #!/bin/bash
-# Multi-seed experiment queue: 4 configs x seeds {1,2,3,4} + SE-only x seeds {1,2,3,4}
+# Multi-seed experiment queue. Seeds 1-4 replicate the four main
+# configurations (seed 42 = primary run from run_experiments_v4.sh);
+# SE-only runs all five seeds because the retrained SE-only ablation
+# (exact inverse Haar transform, no --idwt_legacy) includes the primary seed.
 # Up to MAXPAR concurrent jobs; identical protocol to the paper (50 epochs, no early stop).
 set -u
 ROOT="${ICH_ROOT:-$(dirname "$(dirname "$0")")}"
@@ -12,10 +15,10 @@ LOGD=${ICH_LOG_DIR:-$ROOT/logs_seeds}
 mkdir -p "$OUT" "$LOGD"
 
 CFG_BASE="--epochs 50 --patience 0 --output_dir $OUT"
-A_BASE="--exp_name baseline $CFG_BASE"
-A_WAV="--exp_name wavelet_only --use_wavelet --wavelet_pos layer2 --se_reduction 16 $CFG_BASE"
-A_EDL="--exp_name edl_only --use_edl --edl_loss log --edl_coeff 0.03 $CFG_BASE"
-A_FULL="--exp_name wavelet_edl --use_wavelet --wavelet_pos layer2 --se_reduction 16 --use_edl --edl_loss log --edl_coeff 0.03 $CFG_BASE"
+A_BASE="--exp_name baseline $CFG_BASE --idwt_legacy"
+A_WAV="--exp_name wavelet_only --use_wavelet --wavelet_pos layer2 --se_reduction 16 $CFG_BASE --idwt_legacy"
+A_EDL="--exp_name edl_only --use_edl --edl_loss log --edl_coeff 0.03 $CFG_BASE --idwt_legacy"
+A_FULL="--exp_name wavelet_edl --use_wavelet --wavelet_pos layer2 --se_reduction 16 --use_edl --edl_loss log --edl_coeff 0.03 $CFG_BASE --idwt_legacy"
 A_SE="--exp_name se_only --use_wavelet --se_only --wavelet_pos layer2 --se_reduction 16 $CFG_BASE"
 
 job () {
@@ -31,6 +34,11 @@ export -f job
 export OUT LOGD CFG_BASE
 
 for seed in 1 2 3 4; do
-  printf '%s\n' "$A_BASE|$seed" "$A_WAV|$seed" "$A_EDL|$seed" "$A_FULL|$seed" "$A_SE|$seed"
+  printf '%s\n' "$A_BASE|$seed" "$A_WAV|$seed" "$A_EDL|$seed" "$A_FULL|$seed"
+done | xargs -P "$MAXPAR" -I{} bash -c 'IFS="|" read -r args seed <<< "{}"; job "$args" "$seed"'
+
+# SE-only ablation: all five seeds, exact IDWT (default; no --idwt_legacy)
+for seed in 42 1 2 3 4; do
+  printf '%s\n' "$A_SE|$seed"
 done | xargs -P "$MAXPAR" -I{} bash -c 'IFS="|" read -r args seed <<< "{}"; job "$args" "$seed"'
 echo "[queue] ALL DONE $(date)"

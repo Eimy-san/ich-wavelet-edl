@@ -40,7 +40,12 @@ data/       Patient-level partition lists (train/val/test) and per-series rescal
 | `analyze5_supp_ci.py` | Patient-clustered bootstrap confidence intervals around the multi-seed means (Supplementary Table S1) |
 | `generate_val_predictions.py` | Validation-set predictions for temperature-scaling fits |
 | `make_fig6.py` | Examination-level evaluation figure |
-| `results/` | Precomputed outputs of the above analyses (Tables 3, 4, 6, 7, 8, 10, 11, S1) |
+| `dump_evidence.py` | Re-evaluates a checkpoint on validation and test splits and exports per-slice probabilities and Dirichlet evidence (alphas) for the deferral-rule study |
+| `analyze8_exam.py` | Validation-set examination-level deferral-rule ablation: prespecified, decision-coupled, Dirichlet-decomposition, and learned rules |
+| `analyze9_learned_deferral.py` | Validation-fitted logistic deferral-rule exploration |
+| `analyze10_exam_final.py` | Per-seed rule-selection sensitivity analysis |
+| `analyze11_frozen.py` | Frozen-rule protocol: validation-selected decision-coupled rule applied unchanged to all configurations and seeds (Table 12) |
+| `results/` | Precomputed outputs of the above analyses (Tables 3, 4, 6, 7, 8, 10, 11, 12, S1) |
 
 ### Data files (`data/`)
 
@@ -54,16 +59,45 @@ The RSNA-ICH images themselves are available from the
 
 ## Reproducing the experiments
 
+The two inverse-Haar-transform variants used by the reported runs:
+
+| Reported results | Transform used | Flag |
+|---|---|---|
+| Primary ablation (Table 2, seed 42) and multi-seed replications (Tables 3, 7, 8) of baseline / +Wavelet / +EDL / full | original (permutation) IDWT | `--idwt_legacy` |
+| Retrained SE-only ablation (Table 4, five seeds) | exact IDWT | default (no flag) |
+| Exact-transform robustness runs (Section 2.4, seed 42) | exact IDWT | default (no flag) |
+
 ```bash
-# factorial ablation (single primary run, seed 42)
+# primary ablation (Table 2, seed 42) + SE-only ablation (Table 4, seed 42):
+# reproduces the exact transforms used for each reported configuration
 bash src/run_experiments_v4.sh
 
-# multi-seed replication (seeds 1-4; seed 42 = primary run)
+# multi-seed replication (main configurations: seeds 1-4, legacy IDWT;
+# SE-only: seeds 42-4, exact IDWT)
 MAXPAR=1 bash src/run_seeds.sh
+
+# exact-transform robustness runs quoted in Section 2.4 (seed 42)
+python src/train.py --exp_name wavelet_idwtfix --use_wavelet --wavelet_pos layer2 --se_reduction 16 --seed 42
+python src/train.py --exp_name wavelet_edl_idwtfix --use_wavelet --wavelet_pos layer2 --se_reduction 16 --use_edl --edl_loss log --edl_coeff 0.03 --seed 42
 
 # figures and risk-coverage/calibration summaries
 python src/evaluate.py
 ```
+
+`src/run_experiments_v4.sh` and `src/run_seeds.sh` pass `--idwt_legacy` to the
+four main configurations and leave the SE-only runs on the exact-transform
+default, matching the transforms of the reported runs; the seeds 1-4
+replications of the main configurations therefore reproduce Table 3 exactly.
+`src/dump_evidence.py` re-evaluates a checkpoint on the validation
+and test splits and stores the Dirichlet evidence (alphas) for the
+examination-level deferral-rule study (Table 12): `analyze8_exam.py` compares
+the prespecified rule with decision-coupled and Dirichlet-decomposition
+alternatives on the validation split, and `analyze11_frozen.py` applies the
+validation-selected decision-coupled rule (top-3-mean probability aggregation;
+mean uncertainty of the three most suspicious slices), frozen, to all
+configurations and seeds. The precomputed outputs are
+`analysis/results/exam_rule_ablation.json`, `exam_final.json`,
+`exam_frozen.json`, and `exam_margin_multiseed.json`.
 
 The analysis scripts read the per-run prediction files (`probs`, `labels`, `unc`)
 produced by `src/evaluate.py`. `analyze4.py` expects the primary runs under
