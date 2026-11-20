@@ -1,0 +1,18 @@
+{
+  "note": "These five runs were trained with the original (pre-fix) training script, in which the SE-only configuration was not passed to the model constructor and the runs instantiated the full wavelet attention module. They are retained as five additional replications of the wavelet_only configuration, not as SE-only results. The SE-only row in the manuscript uses the corrected retrained runs (see se_only_corrected.json).",
+  "legacy_runs_as_wavelet_replications": {
+    "auc_mean": 0.9372254009923063,
+    "auc_sd": 0.00334523113065435,
+    "per_seed_auc": {
+      "42": 0.9385054915641161,
+      "1": 0.9375458462418103,
+      "2": 0.9384145764137896,
+      "3": 0.9314879893466362,
+      "4": 0.9401731013951796
+    }
+  },
+  "wavelet_only_reference": {
+    "auc_mean": 0.9389471307380006,
+    "auc_sd": 0.00411080750373174
+  }
+}

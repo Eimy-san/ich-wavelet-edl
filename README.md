@@ -75,6 +75,29 @@ number in the manuscript without retraining.
 
 Requirements: Python >= 3.10, PyTorch 2.5.1, torchvision 0.20.1, scikit-learn, numpy, pandas, opencv-python, matplotlib, scipy.
 
+## Reproducibility notes (revision)
+
+- **Portable paths.** All scripts resolve data, run, and output directories
+  through `ICH_*` environment variables (see `src/config.py`); no absolute
+  paths from the original research machine remain.
+- **Exact Haar inverse transform.** The original implementation reconstructed
+  the IDWT with a fixed permutation of the four subband contributions within
+  each 2x2 block. The exact inverse Haar transform is now the default in
+  `src/wavelet_attention.py` (verified to machine precision); the original
+  reconstruction is preserved behind the `--idwt_legacy` flag so that the
+  reported results can be reproduced exactly. Retraining with the exact
+  transform is reported in the manuscript's robustness analysis.
+- **SE-only configuration.** The original `run_seeds.sh`/`train.py` did not
+  pass the SE-only switch to the model constructor, so runs labeled
+  `se_only` in fact instantiated the full wavelet module. This is fixed;
+  the SE-only results in the manuscript come from retrained runs with the
+  corrected `WaveletModuleSEOnly` module. The five affected earlier runs are
+  retained as `analysis/results/legacy_se_only_runs_as_wavelet_reps.json`
+  (five additional replications of the wavelet configuration).
+- **Inference cost.** `src/bench_latency.py` measures per-slice forward-pass
+  latency and throughput of every configuration on GPU (outputs
+  `latency_results.json`).
+
 ## Citation
 
 If you use this code, please cite the corresponding manuscript.
