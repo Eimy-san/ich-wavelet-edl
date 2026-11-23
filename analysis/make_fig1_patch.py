@@ -214,8 +214,8 @@ xs_ = np.linspace(0, 1, 200)
 acc = 0.985 - 0.058 * xs_**1.7
 ax.axvspan(0, 0.05, color="#E8A08A", alpha=0.30, lw=0)
 ax.axvspan(0.05, 1.0, color="#9FCAC5", alpha=0.25, lw=0)
-ax.plot(xs_, acc, color="#126D79", lw=5, solid_capstyle="round")
-ax.axvline(0.05, color="#B0532F", lw=2.5, ls=(0, (6, 4)), alpha=0.9)
+ax.plot(xs_, acc, color="#126D79", lw=7, solid_capstyle="round")
+ax.axvline(0.05, color="#B0532F", lw=3.5, ls=(0, (6, 4)), alpha=0.9)
 ax.text(
     0.015,
     1.045,
@@ -223,40 +223,40 @@ ax.text(
     ha="left",
     va="bottom",
     transform=ax.transAxes,
-    fontsize=11.5,
+    fontsize=24,
     color="#8A3A20",
     fontproperties=fp,
 )
 ax.text(
-    0.035,
+    0.024,
     0.34,
     "5%",
     ha="center",
     va="center",
     transform=ax.transAxes,
-    fontsize=11,
+    fontsize=20,
     color="#8A3A20",
     fontproperties=fp,
 )
 ax.text(
     0.545,
-    0.78,
+    0.32,
     "Model prediction",
     ha="center",
     va="center",
     transform=ax.transAxes,
-    fontsize=17,
+    fontsize=36,
     color="#0E4E58",
     fontproperties=fp,
 )
 ax.text(
     0.545,
-    0.62,
+    0.18,
     "(95% of examinations)",
     ha="center",
     va="center",
     transform=ax.transAxes,
-    fontsize=13.5,
+    fontsize=22,
     color="#0E4E58",
     fontproperties=fp,
 )
@@ -264,8 +264,8 @@ ax.set_xlim(0, 1)
 ax.set_ylim(0.88, 1.0)
 ax.set_xticks([])
 ax.set_yticks([])
-ax.set_xlabel("Coverage", fontsize=16, fontproperties=fp, labelpad=6)
-ax.set_ylabel("Accuracy", fontsize=16, fontproperties=fp, labelpad=6)
+ax.set_xlabel("Coverage", fontsize=28, fontproperties=fp, labelpad=8)
+ax.set_ylabel("Accuracy", fontsize=28, fontproperties=fp, labelpad=8)
 for s in ["top", "right"]:
     ax.spines[s].set_visible(False)
 for s in ["left", "bottom"]:
@@ -276,7 +276,7 @@ fig.text(
     0.045,
     "R I S K – C O V E R A G E   C O N C E P T",
     ha="center",
-    fontsize=13.5,
+    fontsize=24,
     color="#5A6A72",
     fontproperties=fp,
 )
