@@ -65,11 +65,21 @@ def metrics(pe, ue, y):
 def exam_vectors(p, u, g, pids):
     top1 = np.array([p[g[pp]].max() for pp in pids])
     top3m = np.array([np.sort(p[g[pp]])[::-1][:3].mean() for pp in pids])
-    maxunc = np.array([u[g[pp]].max() for pp in pids])
+    # probability-based total uncertainty 1 - max_k p_k (the paper's
+    # prespecified deferral score for every configuration)
+    u_margin = 1.0 - np.maximum(p, 1.0 - p)
+    maxunc = np.array([u_margin[g[pp]].max() for pp in pids])
+    # per-exam mean of the raw npz uncertainty (entropy for softmax, Dirichlet
+    # vacuity for evidential models) over the top-3 probability slices; this is
+    # the validation-selected decision-coupled score
     dec3mean = np.array(
         [u[g[pp]][np.argsort(p[g[pp]])[::-1][:3]].mean() for pp in pids]
     )
-    return top1, top3m, maxunc, dec3mean
+    # raw npz unc maximised over slices (kept for auditability; for softmax
+    # models it coincides with maxunc, for evidential models it is the
+    # vacuity-max alternative, not the paper's prespecified rule)
+    maxunc_npz = np.array([u[g[pp]].max() for pp in pids])
+    return top1, top3m, maxunc, dec3mean, maxunc_npz
 
 
 def main():
@@ -92,15 +102,16 @@ def main():
             except FileNotFoundError:
                 print("missing", f_te)
                 continue
-            top1_va, top3_va, mu_va, d3m_va = exam_vectors(
+            top1_va, top3_va, mu_va, d3m_va, munp_va = exam_vectors(
                 d_va["probs"].astype(float), d_va["unc"].astype(float), g_va, va_pids
             )
-            top1_te, top3_te, mu_te, d3m_te = exam_vectors(
+            top1_te, top3_te, mu_te, d3m_te, munp_te = exam_vectors(
                 d_te["probs"].astype(float), d_te["unc"].astype(float), g_te, te_pids
             )
             per[str(seed)] = dict(
                 frozen=metrics(top3_te, d3m_te, te_y),
                 prespec=metrics(top1_te, mu_te, te_y),
+                prespec_npz_unc=metrics(top1_te, munp_te, te_y),
                 frozen_val=metrics(top3_va, d3m_va, va_y),
                 prespec_val=metrics(top1_va, mu_va, va_y),
             )

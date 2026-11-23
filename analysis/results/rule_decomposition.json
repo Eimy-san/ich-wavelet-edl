@@ -1,0 +1,1642 @@
+{
+ "baseline": {
+  "per_seed": {
+   "42": {
+    "A_prespec": {
+     "aurc": 0.0355,
+     "acc95": 0.925,
+     "ret_sens": 0.9684,
+     "fn_retained": 3,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9714,
+     "exam_spec": 0.8851
+    },
+    "B_top3cls": {
+     "aurc": 0.033,
+     "acc95": 0.9333,
+     "ret_sens": 0.9158,
+     "fn_retained": 8,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.9392
+    },
+    "C_top3score": {
+     "aurc": 0.0223,
+     "acc95": 0.9417,
+     "ret_sens": 0.9697,
+     "fn_retained": 3,
+     "deferred_pos": 6,
+     "deferred_neg": 7,
+     "exam_sens": 0.9714,
+     "exam_spec": 0.8851
+    },
+    "D_frozen": {
+     "aurc": 0.0219,
+     "acc95": 0.9417,
+     "ret_sens": 0.9307,
+     "fn_retained": 7,
+     "deferred_pos": 4,
+     "deferred_neg": 9,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.9392
+    }
+   },
+   "1": {
+    "A_prespec": {
+     "aurc": 0.1224,
+     "acc95": 0.8,
+     "ret_sens": 0.9688,
+     "fn_retained": 3,
+     "deferred_pos": 9,
+     "deferred_neg": 4,
+     "exam_sens": 0.9714,
+     "exam_spec": 0.6892
+    },
+    "B_top3cls": {
+     "aurc": 0.0771,
+     "acc95": 0.8708,
+     "ret_sens": 0.9375,
+     "fn_retained": 6,
+     "deferred_pos": 9,
+     "deferred_neg": 4,
+     "exam_sens": 0.9429,
+     "exam_spec": 0.8243
+    },
+    "C_top3score": {
+     "aurc": 0.0466,
+     "acc95": 0.825,
+     "ret_sens": 0.9806,
+     "fn_retained": 2,
+     "deferred_pos": 2,
+     "deferred_neg": 11,
+     "exam_sens": 0.9714,
+     "exam_spec": 0.6892
+    },
+    "D_frozen": {
+     "aurc": 0.0331,
+     "acc95": 0.8958,
+     "ret_sens": 0.9612,
+     "fn_retained": 4,
+     "deferred_pos": 2,
+     "deferred_neg": 11,
+     "exam_sens": 0.9429,
+     "exam_spec": 0.8243
+    }
+   },
+   "2": {
+    "A_prespec": {
+     "aurc": 0.0537,
+     "acc95": 0.8917,
+     "ret_sens": 0.9167,
+     "fn_retained": 8,
+     "deferred_pos": 9,
+     "deferred_neg": 4,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.8581
+    },
+    "B_top3cls": {
+     "aurc": 0.0381,
+     "acc95": 0.9333,
+     "ret_sens": 0.8958,
+     "fn_retained": 10,
+     "deferred_pos": 9,
+     "deferred_neg": 4,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.9527
+    },
+    "C_top3score": {
+     "aurc": 0.0239,
+     "acc95": 0.9125,
+     "ret_sens": 0.932,
+     "fn_retained": 7,
+     "deferred_pos": 2,
+     "deferred_neg": 11,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.8581
+    },
+    "D_frozen": {
+     "aurc": 0.0192,
+     "acc95": 0.9458,
+     "ret_sens": 0.9208,
+     "fn_retained": 8,
+     "deferred_pos": 4,
+     "deferred_neg": 9,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.9527
+    }
+   },
+   "3": {
+    "A_prespec": {
+     "aurc": 0.0579,
+     "acc95": 0.8958,
+     "ret_sens": 0.9158,
+     "fn_retained": 8,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.8649
+    },
+    "B_top3cls": {
+     "aurc": 0.041,
+     "acc95": 0.9333,
+     "ret_sens": 0.8632,
+     "fn_retained": 13,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.8762,
+     "exam_spec": 0.973
+    },
+    "C_top3score": {
+     "aurc": 0.0209,
+     "acc95": 0.9042,
+     "ret_sens": 0.9293,
+     "fn_retained": 7,
+     "deferred_pos": 6,
+     "deferred_neg": 7,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.8649
+    },
+    "D_frozen": {
+     "aurc": 0.0159,
+     "acc95": 0.9458,
+     "ret_sens": 0.899,
+     "fn_retained": 10,
+     "deferred_pos": 6,
+     "deferred_neg": 7,
+     "exam_sens": 0.8762,
+     "exam_spec": 0.973
+    }
+   },
+   "4": {
+    "A_prespec": {
+     "aurc": 0.0714,
+     "acc95": 0.8625,
+     "ret_sens": 0.9789,
+     "fn_retained": 2,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.981,
+     "exam_spec": 0.777
+    },
+    "B_top3cls": {
+     "aurc": 0.049,
+     "acc95": 0.8958,
+     "ret_sens": 0.9263,
+     "fn_retained": 7,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9333,
+     "exam_spec": 0.8716
+    },
+    "C_top3score": {
+     "aurc": 0.0301,
+     "acc95": 0.8917,
+     "ret_sens": 0.9902,
+     "fn_retained": 1,
+     "deferred_pos": 3,
+     "deferred_neg": 10,
+     "exam_sens": 0.981,
+     "exam_spec": 0.777
+    },
+    "D_frozen": {
+     "aurc": 0.0207,
+     "acc95": 0.9167,
+     "ret_sens": 0.9505,
+     "fn_retained": 5,
+     "deferred_pos": 4,
+     "deferred_neg": 9,
+     "exam_sens": 0.9333,
+     "exam_spec": 0.8716
+    }
+   }
+  },
+  "agg": {
+   "A_prespec_aurc": {
+    "mean": 0.0682,
+    "sd": 0.0329
+   },
+   "A_prespec_acc95": {
+    "mean": 0.875,
+    "sd": 0.0474
+   },
+   "A_prespec_ret_sens": {
+    "mean": 0.9497,
+    "sd": 0.0308
+   },
+   "A_prespec_fn_retained": {
+    "mean": 4.8,
+    "sd": 2.9496
+   },
+   "A_prespec_deferred_pos": {
+    "mean": 9.6,
+    "sd": 0.5477
+   },
+   "A_prespec_exam_sens": {
+    "mean": 0.9543,
+    "sd": 0.0281
+   },
+   "A_prespec_exam_spec": {
+    "mean": 0.8149,
+    "sd": 0.0814
+   },
+   "B_top3cls_aurc": {
+    "mean": 0.0476,
+    "sd": 0.0175
+   },
+   "B_top3cls_acc95": {
+    "mean": 0.9133,
+    "sd": 0.0288
+   },
+   "B_top3cls_ret_sens": {
+    "mean": 0.9077,
+    "sd": 0.0292
+   },
+   "B_top3cls_fn_retained": {
+    "mean": 8.8,
+    "sd": 2.7749
+   },
+   "B_top3cls_deferred_pos": {
+    "mean": 9.6,
+    "sd": 0.5477
+   },
+   "B_top3cls_exam_sens": {
+    "mean": 0.9162,
+    "sd": 0.0264
+   },
+   "B_top3cls_exam_spec": {
+    "mean": 0.9122,
+    "sd": 0.0621
+   },
+   "C_top3score_aurc": {
+    "mean": 0.0288,
+    "sd": 0.0106
+   },
+   "C_top3score_acc95": {
+    "mean": 0.895,
+    "sd": 0.0433
+   },
+   "C_top3score_ret_sens": {
+    "mean": 0.9604,
+    "sd": 0.0281
+   },
+   "C_top3score_fn_retained": {
+    "mean": 4.0,
+    "sd": 2.8284
+   },
+   "C_top3score_deferred_pos": {
+    "mean": 3.8,
+    "sd": 2.0494
+   },
+   "C_top3score_exam_sens": {
+    "mean": 0.9543,
+    "sd": 0.0281
+   },
+   "C_top3score_exam_spec": {
+    "mean": 0.8149,
+    "sd": 0.0814
+   },
+   "D_frozen_aurc": {
+    "mean": 0.0222,
+    "sd": 0.0065
+   },
+   "D_frozen_acc95": {
+    "mean": 0.9292,
+    "sd": 0.0222
+   },
+   "D_frozen_ret_sens": {
+    "mean": 0.9324,
+    "sd": 0.0245
+   },
+   "D_frozen_fn_retained": {
+    "mean": 6.8,
+    "sd": 2.3875
+   },
+   "D_frozen_deferred_pos": {
+    "mean": 4.0,
+    "sd": 1.4142
+   },
+   "D_frozen_exam_sens": {
+    "mean": 0.9162,
+    "sd": 0.0264
+   },
+   "D_frozen_exam_spec": {
+    "mean": 0.9122,
+    "sd": 0.0621
+   }
+  }
+ },
+ "wavelet": {
+  "per_seed": {
+   "42": {
+    "A_prespec": {
+     "aurc": 0.0297,
+     "acc95": 0.9375,
+     "ret_sens": 0.957,
+     "fn_retained": 4,
+     "deferred_pos": 12,
+     "deferred_neg": 1,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.9189
+    },
+    "B_top3cls": {
+     "aurc": 0.0271,
+     "acc95": 0.9458,
+     "ret_sens": 0.9032,
+     "fn_retained": 9,
+     "deferred_pos": 12,
+     "deferred_neg": 1,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.9662
+    },
+    "C_top3score": {
+     "aurc": 0.0102,
+     "acc95": 0.95,
+     "ret_sens": 0.9588,
+     "fn_retained": 4,
+     "deferred_pos": 8,
+     "deferred_neg": 5,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.9189
+    },
+    "D_frozen": {
+     "aurc": 0.0096,
+     "acc95": 0.9542,
+     "ret_sens": 0.9184,
+     "fn_retained": 8,
+     "deferred_pos": 7,
+     "deferred_neg": 6,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.9662
+    }
+   },
+   "1": {
+    "A_prespec": {
+     "aurc": 0.0443,
+     "acc95": 0.9125,
+     "ret_sens": 0.9355,
+     "fn_retained": 6,
+     "deferred_pos": 12,
+     "deferred_neg": 1,
+     "exam_sens": 0.9333,
+     "exam_spec": 0.8986
+    },
+    "B_top3cls": {
+     "aurc": 0.0392,
+     "acc95": 0.9333,
+     "ret_sens": 0.9032,
+     "fn_retained": 9,
+     "deferred_pos": 12,
+     "deferred_neg": 1,
+     "exam_sens": 0.8952,
+     "exam_spec": 0.9527
+    },
+    "C_top3score": {
+     "aurc": 0.0228,
+     "acc95": 0.9375,
+     "ret_sens": 0.9495,
+     "fn_retained": 5,
+     "deferred_pos": 6,
+     "deferred_neg": 7,
+     "exam_sens": 0.9333,
+     "exam_spec": 0.8986
+    },
+    "D_frozen": {
+     "aurc": 0.0217,
+     "acc95": 0.95,
+     "ret_sens": 0.9286,
+     "fn_retained": 7,
+     "deferred_pos": 7,
+     "deferred_neg": 6,
+     "exam_sens": 0.8952,
+     "exam_spec": 0.9527
+    }
+   },
+   "2": {
+    "A_prespec": {
+     "aurc": 0.0568,
+     "acc95": 0.8875,
+     "ret_sens": 0.9479,
+     "fn_retained": 5,
+     "deferred_pos": 9,
+     "deferred_neg": 4,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8311
+    },
+    "B_top3cls": {
+     "aurc": 0.0459,
+     "acc95": 0.925,
+     "ret_sens": 0.8958,
+     "fn_retained": 10,
+     "deferred_pos": 9,
+     "deferred_neg": 4,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.9257
+    },
+    "C_top3score": {
+     "aurc": 0.0248,
+     "acc95": 0.9042,
+     "ret_sens": 0.9505,
+     "fn_retained": 5,
+     "deferred_pos": 4,
+     "deferred_neg": 9,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8311
+    },
+    "D_frozen": {
+     "aurc": 0.0222,
+     "acc95": 0.9292,
+     "ret_sens": 0.92,
+     "fn_retained": 8,
+     "deferred_pos": 5,
+     "deferred_neg": 8,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.9257
+    }
+   },
+   "3": {
+    "A_prespec": {
+     "aurc": 0.0418,
+     "acc95": 0.9,
+     "ret_sens": 0.9263,
+     "fn_retained": 7,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9333,
+     "exam_spec": 0.8716
+    },
+    "B_top3cls": {
+     "aurc": 0.0296,
+     "acc95": 0.925,
+     "ret_sens": 0.8947,
+     "fn_retained": 10,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.9392
+    },
+    "C_top3score": {
+     "aurc": 0.0164,
+     "acc95": 0.9208,
+     "ret_sens": 0.9412,
+     "fn_retained": 6,
+     "deferred_pos": 3,
+     "deferred_neg": 10,
+     "exam_sens": 0.9333,
+     "exam_spec": 0.8716
+    },
+    "D_frozen": {
+     "aurc": 0.0124,
+     "acc95": 0.9417,
+     "ret_sens": 0.92,
+     "fn_retained": 8,
+     "deferred_pos": 5,
+     "deferred_neg": 8,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.9392
+    }
+   },
+   "4": {
+    "A_prespec": {
+     "aurc": 0.0524,
+     "acc95": 0.8833,
+     "ret_sens": 0.9474,
+     "fn_retained": 5,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8243
+    },
+    "B_top3cls": {
+     "aurc": 0.0304,
+     "acc95": 0.9333,
+     "ret_sens": 0.9158,
+     "fn_retained": 8,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.9392
+    },
+    "C_top3score": {
+     "aurc": 0.0187,
+     "acc95": 0.9,
+     "ret_sens": 0.95,
+     "fn_retained": 5,
+     "deferred_pos": 5,
+     "deferred_neg": 8,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8243
+    },
+    "D_frozen": {
+     "aurc": 0.0124,
+     "acc95": 0.9458,
+     "ret_sens": 0.93,
+     "fn_retained": 7,
+     "deferred_pos": 5,
+     "deferred_neg": 8,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.9392
+    }
+   }
+  },
+  "agg": {
+   "A_prespec_aurc": {
+    "mean": 0.045,
+    "sd": 0.0105
+   },
+   "A_prespec_acc95": {
+    "mean": 0.9042,
+    "sd": 0.0219
+   },
+   "A_prespec_ret_sens": {
+    "mean": 0.9428,
+    "sd": 0.012
+   },
+   "A_prespec_fn_retained": {
+    "mean": 5.4,
+    "sd": 1.1402
+   },
+   "A_prespec_deferred_pos": {
+    "mean": 10.6,
+    "sd": 1.3416
+   },
+   "A_prespec_exam_sens": {
+    "mean": 0.9448,
+    "sd": 0.0105
+   },
+   "A_prespec_exam_spec": {
+    "mean": 0.8689,
+    "sd": 0.0413
+   },
+   "B_top3cls_aurc": {
+    "mean": 0.0344,
+    "sd": 0.0079
+   },
+   "B_top3cls_acc95": {
+    "mean": 0.9325,
+    "sd": 0.0085
+   },
+   "B_top3cls_ret_sens": {
+    "mean": 0.9025,
+    "sd": 0.0084
+   },
+   "B_top3cls_fn_retained": {
+    "mean": 9.2,
+    "sd": 0.8367
+   },
+   "B_top3cls_deferred_pos": {
+    "mean": 10.6,
+    "sd": 1.3416
+   },
+   "B_top3cls_exam_sens": {
+    "mean": 0.9067,
+    "sd": 0.0104
+   },
+   "B_top3cls_exam_spec": {
+    "mean": 0.9446,
+    "sd": 0.0154
+   },
+   "C_top3score_aurc": {
+    "mean": 0.0186,
+    "sd": 0.0057
+   },
+   "C_top3score_acc95": {
+    "mean": 0.9225,
+    "sd": 0.0214
+   },
+   "C_top3score_ret_sens": {
+    "mean": 0.95,
+    "sd": 0.0062
+   },
+   "C_top3score_fn_retained": {
+    "mean": 5.0,
+    "sd": 0.7071
+   },
+   "C_top3score_deferred_pos": {
+    "mean": 5.2,
+    "sd": 1.9235
+   },
+   "C_top3score_exam_sens": {
+    "mean": 0.9448,
+    "sd": 0.0105
+   },
+   "C_top3score_exam_spec": {
+    "mean": 0.8689,
+    "sd": 0.0413
+   },
+   "D_frozen_aurc": {
+    "mean": 0.0157,
+    "sd": 0.0059
+   },
+   "D_frozen_acc95": {
+    "mean": 0.9442,
+    "sd": 0.0096
+   },
+   "D_frozen_ret_sens": {
+    "mean": 0.9234,
+    "sd": 0.0054
+   },
+   "D_frozen_fn_retained": {
+    "mean": 7.6,
+    "sd": 0.5477
+   },
+   "D_frozen_deferred_pos": {
+    "mean": 5.8,
+    "sd": 1.0954
+   },
+   "D_frozen_exam_sens": {
+    "mean": 0.9067,
+    "sd": 0.0104
+   },
+   "D_frozen_exam_spec": {
+    "mean": 0.9446,
+    "sd": 0.0154
+   }
+  }
+ },
+ "edl": {
+  "per_seed": {
+   "42": {
+    "A_prespec": {
+     "aurc": 0.041,
+     "acc95": 0.925,
+     "ret_sens": 0.9158,
+     "fn_retained": 8,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.9122
+    },
+    "B_top3cls": {
+     "aurc": 0.0416,
+     "acc95": 0.9167,
+     "ret_sens": 0.8526,
+     "fn_retained": 14,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.8667,
+     "exam_spec": 0.9527
+    },
+    "C_top3score": {
+     "aurc": 0.0188,
+     "acc95": 0.9333,
+     "ret_sens": 0.9388,
+     "fn_retained": 6,
+     "deferred_pos": 7,
+     "deferred_neg": 6,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.9122
+    },
+    "D_frozen": {
+     "aurc": 0.024,
+     "acc95": 0.9292,
+     "ret_sens": 0.88,
+     "fn_retained": 12,
+     "deferred_pos": 5,
+     "deferred_neg": 8,
+     "exam_sens": 0.8667,
+     "exam_spec": 0.9527
+    }
+   },
+   "1": {
+    "A_prespec": {
+     "aurc": 0.0492,
+     "acc95": 0.8958,
+     "ret_sens": 0.9579,
+     "fn_retained": 4,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9619,
+     "exam_spec": 0.8514
+    },
+    "B_top3cls": {
+     "aurc": 0.0388,
+     "acc95": 0.9292,
+     "ret_sens": 0.9053,
+     "fn_retained": 9,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9143,
+     "exam_spec": 0.9459
+    },
+    "C_top3score": {
+     "aurc": 0.0194,
+     "acc95": 0.9208,
+     "ret_sens": 0.9608,
+     "fn_retained": 4,
+     "deferred_pos": 3,
+     "deferred_neg": 10,
+     "exam_sens": 0.9619,
+     "exam_spec": 0.8514
+    },
+    "D_frozen": {
+     "aurc": 0.0156,
+     "acc95": 0.95,
+     "ret_sens": 0.93,
+     "fn_retained": 7,
+     "deferred_pos": 5,
+     "deferred_neg": 8,
+     "exam_sens": 0.9143,
+     "exam_spec": 0.9459
+    }
+   },
+   "2": {
+    "A_prespec": {
+     "aurc": 0.086,
+     "acc95": 0.8417,
+     "ret_sens": 0.9789,
+     "fn_retained": 2,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.981,
+     "exam_spec": 0.7365
+    },
+    "B_top3cls": {
+     "aurc": 0.0589,
+     "acc95": 0.8875,
+     "ret_sens": 0.9474,
+     "fn_retained": 5,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8446
+    },
+    "C_top3score": {
+     "aurc": 0.0402,
+     "acc95": 0.8792,
+     "ret_sens": 0.981,
+     "fn_retained": 2,
+     "deferred_pos": 0,
+     "deferred_neg": 13,
+     "exam_sens": 0.981,
+     "exam_spec": 0.7365
+    },
+    "D_frozen": {
+     "aurc": 0.042,
+     "acc95": 0.8875,
+     "ret_sens": 0.9524,
+     "fn_retained": 5,
+     "deferred_pos": 0,
+     "deferred_neg": 13,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8446
+    }
+   },
+   "3": {
+    "A_prespec": {
+     "aurc": 0.0871,
+     "acc95": 0.8417,
+     "ret_sens": 0.9684,
+     "fn_retained": 3,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9619,
+     "exam_spec": 0.7432
+    },
+    "B_top3cls": {
+     "aurc": 0.0442,
+     "acc95": 0.9083,
+     "ret_sens": 0.9579,
+     "fn_retained": 4,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8649
+    },
+    "C_top3score": {
+     "aurc": 0.0368,
+     "acc95": 0.8667,
+     "ret_sens": 0.9804,
+     "fn_retained": 2,
+     "deferred_pos": 3,
+     "deferred_neg": 10,
+     "exam_sens": 0.9619,
+     "exam_spec": 0.7432
+    },
+    "D_frozen": {
+     "aurc": 0.0248,
+     "acc95": 0.925,
+     "ret_sens": 0.9615,
+     "fn_retained": 4,
+     "deferred_pos": 1,
+     "deferred_neg": 12,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8649
+    }
+   },
+   "4": {
+    "A_prespec": {
+     "aurc": 0.0707,
+     "acc95": 0.8625,
+     "ret_sens": 0.9062,
+     "fn_retained": 9,
+     "deferred_pos": 9,
+     "deferred_neg": 4,
+     "exam_sens": 0.9143,
+     "exam_spec": 0.8176
+    },
+    "B_top3cls": {
+     "aurc": 0.0581,
+     "acc95": 0.8917,
+     "ret_sens": 0.8958,
+     "fn_retained": 10,
+     "deferred_pos": 9,
+     "deferred_neg": 4,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.8784
+    },
+    "C_top3score": {
+     "aurc": 0.0339,
+     "acc95": 0.8708,
+     "ret_sens": 0.9208,
+     "fn_retained": 8,
+     "deferred_pos": 4,
+     "deferred_neg": 9,
+     "exam_sens": 0.9143,
+     "exam_spec": 0.8176
+    },
+    "D_frozen": {
+     "aurc": 0.0327,
+     "acc95": 0.9,
+     "ret_sens": 0.9038,
+     "fn_retained": 10,
+     "deferred_pos": 1,
+     "deferred_neg": 12,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.8784
+    }
+   }
+  },
+  "agg": {
+   "A_prespec_aurc": {
+    "mean": 0.0668,
+    "sd": 0.021
+   },
+   "A_prespec_acc95": {
+    "mean": 0.8733,
+    "sd": 0.0364
+   },
+   "A_prespec_ret_sens": {
+    "mean": 0.9454,
+    "sd": 0.0325
+   },
+   "A_prespec_fn_retained": {
+    "mean": 5.2,
+    "sd": 3.1145
+   },
+   "A_prespec_deferred_pos": {
+    "mean": 9.8,
+    "sd": 0.4472
+   },
+   "A_prespec_exam_sens": {
+    "mean": 0.9486,
+    "sd": 0.0283
+   },
+   "A_prespec_exam_spec": {
+    "mean": 0.8122,
+    "sd": 0.0743
+   },
+   "B_top3cls_aurc": {
+    "mean": 0.0483,
+    "sd": 0.0095
+   },
+   "B_top3cls_acc95": {
+    "mean": 0.9067,
+    "sd": 0.0173
+   },
+   "B_top3cls_ret_sens": {
+    "mean": 0.9118,
+    "sd": 0.0424
+   },
+   "B_top3cls_fn_retained": {
+    "mean": 8.4,
+    "sd": 4.0373
+   },
+   "B_top3cls_deferred_pos": {
+    "mean": 9.8,
+    "sd": 0.4472
+   },
+   "B_top3cls_exam_sens": {
+    "mean": 0.9181,
+    "sd": 0.036
+   },
+   "B_top3cls_exam_spec": {
+    "mean": 0.8973,
+    "sd": 0.049
+   },
+   "C_top3score_aurc": {
+    "mean": 0.0298,
+    "sd": 0.01
+   },
+   "C_top3score_acc95": {
+    "mean": 0.8942,
+    "sd": 0.0307
+   },
+   "C_top3score_ret_sens": {
+    "mean": 0.9564,
+    "sd": 0.0264
+   },
+   "C_top3score_fn_retained": {
+    "mean": 4.4,
+    "sd": 2.6077
+   },
+   "C_top3score_deferred_pos": {
+    "mean": 3.4,
+    "sd": 2.51
+   },
+   "C_top3score_exam_sens": {
+    "mean": 0.9486,
+    "sd": 0.0283
+   },
+   "C_top3score_exam_spec": {
+    "mean": 0.8122,
+    "sd": 0.0743
+   },
+   "D_frozen_aurc": {
+    "mean": 0.0278,
+    "sd": 0.01
+   },
+   "D_frozen_acc95": {
+    "mean": 0.9183,
+    "sd": 0.0248
+   },
+   "D_frozen_ret_sens": {
+    "mean": 0.9255,
+    "sd": 0.0338
+   },
+   "D_frozen_fn_retained": {
+    "mean": 7.6,
+    "sd": 3.3615
+   },
+   "D_frozen_deferred_pos": {
+    "mean": 2.4,
+    "sd": 2.4083
+   },
+   "D_frozen_exam_sens": {
+    "mean": 0.9181,
+    "sd": 0.036
+   },
+   "D_frozen_exam_spec": {
+    "mean": 0.8973,
+    "sd": 0.049
+   }
+  }
+ },
+ "full": {
+  "per_seed": {
+   "42": {
+    "A_prespec": {
+     "aurc": 0.0391,
+     "acc95": 0.9125,
+     "ret_sens": 0.9474,
+     "fn_retained": 5,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8716
+    },
+    "B_top3cls": {
+     "aurc": 0.0389,
+     "acc95": 0.9167,
+     "ret_sens": 0.8842,
+     "fn_retained": 11,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.8952,
+     "exam_spec": 0.9324
+    },
+    "C_top3score": {
+     "aurc": 0.0143,
+     "acc95": 0.9208,
+     "ret_sens": 0.96,
+     "fn_retained": 4,
+     "deferred_pos": 5,
+     "deferred_neg": 8,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8716
+    },
+    "D_frozen": {
+     "aurc": 0.0139,
+     "acc95": 0.9375,
+     "ret_sens": 0.9109,
+     "fn_retained": 9,
+     "deferred_pos": 4,
+     "deferred_neg": 9,
+     "exam_sens": 0.8952,
+     "exam_spec": 0.9324
+    }
+   },
+   "1": {
+    "A_prespec": {
+     "aurc": 0.1558,
+     "acc95": 0.7458,
+     "ret_sens": 0.97,
+     "fn_retained": 3,
+     "deferred_pos": 5,
+     "deferred_neg": 8,
+     "exam_sens": 0.9714,
+     "exam_spec": 0.5541
+    },
+    "B_top3cls": {
+     "aurc": 0.0922,
+     "acc95": 0.8375,
+     "ret_sens": 0.94,
+     "fn_retained": 6,
+     "deferred_pos": 5,
+     "deferred_neg": 8,
+     "exam_sens": 0.9429,
+     "exam_spec": 0.7432
+    },
+    "C_top3score": {
+     "aurc": 0.0842,
+     "acc95": 0.7542,
+     "ret_sens": 0.9712,
+     "fn_retained": 3,
+     "deferred_pos": 1,
+     "deferred_neg": 12,
+     "exam_sens": 0.9714,
+     "exam_spec": 0.5541
+    },
+    "D_frozen": {
+     "aurc": 0.0895,
+     "acc95": 0.825,
+     "ret_sens": 0.9423,
+     "fn_retained": 6,
+     "deferred_pos": 1,
+     "deferred_neg": 12,
+     "exam_sens": 0.9429,
+     "exam_spec": 0.7432
+    }
+   },
+   "2": {
+    "A_prespec": {
+     "aurc": 0.1138,
+     "acc95": 0.7875,
+     "ret_sens": 0.9485,
+     "fn_retained": 5,
+     "deferred_pos": 8,
+     "deferred_neg": 5,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.6554
+    },
+    "B_top3cls": {
+     "aurc": 0.0589,
+     "acc95": 0.8708,
+     "ret_sens": 0.9381,
+     "fn_retained": 6,
+     "deferred_pos": 8,
+     "deferred_neg": 5,
+     "exam_sens": 0.9429,
+     "exam_spec": 0.8176
+    },
+    "C_top3score": {
+     "aurc": 0.0539,
+     "acc95": 0.8125,
+     "ret_sens": 0.9706,
+     "fn_retained": 3,
+     "deferred_pos": 3,
+     "deferred_neg": 10,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.6554
+    },
+    "D_frozen": {
+     "aurc": 0.0588,
+     "acc95": 0.875,
+     "ret_sens": 0.9429,
+     "fn_retained": 6,
+     "deferred_pos": 0,
+     "deferred_neg": 13,
+     "exam_sens": 0.9429,
+     "exam_spec": 0.8176
+    }
+   },
+   "3": {
+    "A_prespec": {
+     "aurc": 0.0848,
+     "acc95": 0.8375,
+     "ret_sens": 0.9787,
+     "fn_retained": 2,
+     "deferred_pos": 11,
+     "deferred_neg": 2,
+     "exam_sens": 0.981,
+     "exam_spec": 0.7432
+    },
+    "B_top3cls": {
+     "aurc": 0.0428,
+     "acc95": 0.8917,
+     "ret_sens": 0.9574,
+     "fn_retained": 4,
+     "deferred_pos": 11,
+     "deferred_neg": 2,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8446
+    },
+    "C_top3score": {
+     "aurc": 0.0428,
+     "acc95": 0.8667,
+     "ret_sens": 0.9806,
+     "fn_retained": 2,
+     "deferred_pos": 2,
+     "deferred_neg": 11,
+     "exam_sens": 0.981,
+     "exam_spec": 0.7432
+    },
+    "D_frozen": {
+     "aurc": 0.0356,
+     "acc95": 0.9042,
+     "ret_sens": 0.9524,
+     "fn_retained": 5,
+     "deferred_pos": 0,
+     "deferred_neg": 13,
+     "exam_sens": 0.9524,
+     "exam_spec": 0.8446
+    }
+   },
+   "4": {
+    "A_prespec": {
+     "aurc": 0.0739,
+     "acc95": 0.8667,
+     "ret_sens": 0.9032,
+     "fn_retained": 9,
+     "deferred_pos": 12,
+     "deferred_neg": 1,
+     "exam_sens": 0.9143,
+     "exam_spec": 0.8446
+    },
+    "B_top3cls": {
+     "aurc": 0.04,
+     "acc95": 0.925,
+     "ret_sens": 0.8925,
+     "fn_retained": 10,
+     "deferred_pos": 12,
+     "deferred_neg": 1,
+     "exam_sens": 0.8952,
+     "exam_spec": 0.9459
+    },
+    "C_top3score": {
+     "aurc": 0.0243,
+     "acc95": 0.9,
+     "ret_sens": 0.9388,
+     "fn_retained": 6,
+     "deferred_pos": 7,
+     "deferred_neg": 6,
+     "exam_sens": 0.9143,
+     "exam_spec": 0.8446
+    },
+    "D_frozen": {
+     "aurc": 0.0134,
+     "acc95": 0.9375,
+     "ret_sens": 0.902,
+     "fn_retained": 10,
+     "deferred_pos": 3,
+     "deferred_neg": 10,
+     "exam_sens": 0.8952,
+     "exam_spec": 0.9459
+    }
+   }
+  },
+  "agg": {
+   "A_prespec_aurc": {
+    "mean": 0.0935,
+    "sd": 0.0439
+   },
+   "A_prespec_acc95": {
+    "mean": 0.83,
+    "sd": 0.0654
+   },
+   "A_prespec_ret_sens": {
+    "mean": 0.9496,
+    "sd": 0.0292
+   },
+   "A_prespec_fn_retained": {
+    "mean": 4.8,
+    "sd": 2.6833
+   },
+   "A_prespec_deferred_pos": {
+    "mean": 9.2,
+    "sd": 2.7749
+   },
+   "A_prespec_exam_sens": {
+    "mean": 0.9543,
+    "sd": 0.0256
+   },
+   "A_prespec_exam_spec": {
+    "mean": 0.7338,
+    "sd": 0.1321
+   },
+   "B_top3cls_aurc": {
+    "mean": 0.0546,
+    "sd": 0.0225
+   },
+   "B_top3cls_acc95": {
+    "mean": 0.8883,
+    "sd": 0.0355
+   },
+   "B_top3cls_ret_sens": {
+    "mean": 0.9224,
+    "sd": 0.0322
+   },
+   "B_top3cls_fn_retained": {
+    "mean": 7.4,
+    "sd": 2.9665
+   },
+   "B_top3cls_deferred_pos": {
+    "mean": 9.2,
+    "sd": 2.7749
+   },
+   "B_top3cls_exam_sens": {
+    "mean": 0.9257,
+    "sd": 0.0281
+   },
+   "B_top3cls_exam_spec": {
+    "mean": 0.8567,
+    "sd": 0.084
+   },
+   "C_top3score_aurc": {
+    "mean": 0.0439,
+    "sd": 0.0273
+   },
+   "C_top3score_acc95": {
+    "mean": 0.8508,
+    "sd": 0.0678
+   },
+   "C_top3score_ret_sens": {
+    "mean": 0.9642,
+    "sd": 0.016
+   },
+   "C_top3score_fn_retained": {
+    "mean": 3.6,
+    "sd": 1.5166
+   },
+   "C_top3score_deferred_pos": {
+    "mean": 3.6,
+    "sd": 2.4083
+   },
+   "C_top3score_exam_sens": {
+    "mean": 0.9543,
+    "sd": 0.0256
+   },
+   "C_top3score_exam_spec": {
+    "mean": 0.7338,
+    "sd": 0.1321
+   },
+   "D_frozen_aurc": {
+    "mean": 0.0422,
+    "sd": 0.0324
+   },
+   "D_frozen_acc95": {
+    "mean": 0.8958,
+    "sd": 0.0474
+   },
+   "D_frozen_ret_sens": {
+    "mean": 0.9301,
+    "sd": 0.0222
+   },
+   "D_frozen_fn_retained": {
+    "mean": 7.2,
+    "sd": 2.1679
+   },
+   "D_frozen_deferred_pos": {
+    "mean": 1.6,
+    "sd": 1.8166
+   },
+   "D_frozen_exam_sens": {
+    "mean": 0.9257,
+    "sd": 0.0281
+   },
+   "D_frozen_exam_spec": {
+    "mean": 0.8567,
+    "sd": 0.084
+   }
+  }
+ },
+ "se_only": {
+  "per_seed": {
+   "42": {
+    "A_prespec": {
+     "aurc": 0.0451,
+     "acc95": 0.8875,
+     "ret_sens": 0.9565,
+     "fn_retained": 4,
+     "deferred_pos": 13,
+     "deferred_neg": 0,
+     "exam_sens": 0.9619,
+     "exam_spec": 0.8446
+    },
+    "B_top3cls": {
+     "aurc": 0.0354,
+     "acc95": 0.9208,
+     "ret_sens": 0.9239,
+     "fn_retained": 7,
+     "deferred_pos": 13,
+     "deferred_neg": 0,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.9189
+    },
+    "C_top3score": {
+     "aurc": 0.0202,
+     "acc95": 0.9208,
+     "ret_sens": 0.9608,
+     "fn_retained": 4,
+     "deferred_pos": 3,
+     "deferred_neg": 10,
+     "exam_sens": 0.9619,
+     "exam_spec": 0.8446
+    },
+    "D_frozen": {
+     "aurc": 0.0168,
+     "acc95": 0.9458,
+     "ret_sens": 0.9314,
+     "fn_retained": 7,
+     "deferred_pos": 3,
+     "deferred_neg": 10,
+     "exam_sens": 0.9238,
+     "exam_spec": 0.9189
+    }
+   },
+   "1": {
+    "A_prespec": {
+     "aurc": 0.0816,
+     "acc95": 0.8333,
+     "ret_sens": 0.9579,
+     "fn_retained": 4,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9619,
+     "exam_spec": 0.7432
+    },
+    "B_top3cls": {
+     "aurc": 0.0497,
+     "acc95": 0.8875,
+     "ret_sens": 0.8947,
+     "fn_retained": 10,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.8784
+    },
+    "C_top3score": {
+     "aurc": 0.0325,
+     "acc95": 0.8625,
+     "ret_sens": 0.9612,
+     "fn_retained": 4,
+     "deferred_pos": 2,
+     "deferred_neg": 11,
+     "exam_sens": 0.9619,
+     "exam_spec": 0.7432
+    },
+    "D_frozen": {
+     "aurc": 0.0227,
+     "acc95": 0.9125,
+     "ret_sens": 0.9223,
+     "fn_retained": 8,
+     "deferred_pos": 2,
+     "deferred_neg": 11,
+     "exam_sens": 0.9048,
+     "exam_spec": 0.8784
+    }
+   },
+   "2": {
+    "A_prespec": {
+     "aurc": 0.0455,
+     "acc95": 0.9042,
+     "ret_sens": 0.9255,
+     "fn_retained": 7,
+     "deferred_pos": 11,
+     "deferred_neg": 2,
+     "exam_sens": 0.9333,
+     "exam_spec": 0.8784
+    },
+    "B_top3cls": {
+     "aurc": 0.0379,
+     "acc95": 0.9292,
+     "ret_sens": 0.8723,
+     "fn_retained": 12,
+     "deferred_pos": 11,
+     "deferred_neg": 2,
+     "exam_sens": 0.8857,
+     "exam_spec": 0.9595
+    },
+    "C_top3score": {
+     "aurc": 0.0157,
+     "acc95": 0.9292,
+     "ret_sens": 0.9495,
+     "fn_retained": 5,
+     "deferred_pos": 6,
+     "deferred_neg": 7,
+     "exam_sens": 0.9333,
+     "exam_spec": 0.8784
+    },
+    "D_frozen": {
+     "aurc": 0.0131,
+     "acc95": 0.95,
+     "ret_sens": 0.9184,
+     "fn_retained": 8,
+     "deferred_pos": 7,
+     "deferred_neg": 6,
+     "exam_sens": 0.8857,
+     "exam_spec": 0.9595
+    }
+   },
+   "3": {
+    "A_prespec": {
+     "aurc": 0.0541,
+     "acc95": 0.8833,
+     "ret_sens": 0.9684,
+     "fn_retained": 3,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9619,
+     "exam_spec": 0.8108
+    },
+    "B_top3cls": {
+     "aurc": 0.0304,
+     "acc95": 0.9292,
+     "ret_sens": 0.9368,
+     "fn_retained": 6,
+     "deferred_pos": 10,
+     "deferred_neg": 3,
+     "exam_sens": 0.9333,
+     "exam_spec": 0.9054
+    },
+    "C_top3score": {
+     "aurc": 0.024,
+     "acc95": 0.9042,
+     "ret_sens": 0.97,
+     "fn_retained": 3,
+     "deferred_pos": 5,
+     "deferred_neg": 8,
+     "exam_sens": 0.9619,
+     "exam_spec": 0.8108
+    },
+    "D_frozen": {
+     "aurc": 0.0169,
+     "acc95": 0.95,
+     "ret_sens": 0.9604,
+     "fn_retained": 4,
+     "deferred_pos": 4,
+     "deferred_neg": 9,
+     "exam_sens": 0.9333,
+     "exam_spec": 0.9054
+    }
+   },
+   "4": {
+    "A_prespec": {
+     "aurc": 0.0541,
+     "acc95": 0.8708,
+     "ret_sens": 0.9375,
+     "fn_retained": 6,
+     "deferred_pos": 9,
+     "deferred_neg": 4,
+     "exam_sens": 0.9429,
+     "exam_spec": 0.8176
+    },
+    "B_top3cls": {
+     "aurc": 0.0384,
+     "acc95": 0.9167,
+     "ret_sens": 0.8854,
+     "fn_retained": 11,
+     "deferred_pos": 9,
+     "deferred_neg": 4,
+     "exam_sens": 0.8952,
+     "exam_spec": 0.9392
+    },
+    "C_top3score": {
+     "aurc": 0.0225,
+     "acc95": 0.8917,
+     "ret_sens": 0.9505,
+     "fn_retained": 5,
+     "deferred_pos": 4,
+     "deferred_neg": 9,
+     "exam_sens": 0.9429,
+     "exam_spec": 0.8176
+    },
+    "D_frozen": {
+     "aurc": 0.0171,
+     "acc95": 0.9292,
+     "ret_sens": 0.901,
+     "fn_retained": 10,
+     "deferred_pos": 4,
+     "deferred_neg": 9,
+     "exam_sens": 0.8952,
+     "exam_spec": 0.9392
+    }
+   }
+  },
+  "agg": {
+   "A_prespec_aurc": {
+    "mean": 0.0561,
+    "sd": 0.0149
+   },
+   "A_prespec_acc95": {
+    "mean": 0.8758,
+    "sd": 0.0266
+   },
+   "A_prespec_ret_sens": {
+    "mean": 0.9492,
+    "sd": 0.0173
+   },
+   "A_prespec_fn_retained": {
+    "mean": 4.8,
+    "sd": 1.6432
+   },
+   "A_prespec_deferred_pos": {
+    "mean": 10.6,
+    "sd": 1.5166
+   },
+   "A_prespec_exam_sens": {
+    "mean": 0.9524,
+    "sd": 0.0135
+   },
+   "A_prespec_exam_spec": {
+    "mean": 0.8189,
+    "sd": 0.05
+   },
+   "B_top3cls_aurc": {
+    "mean": 0.0384,
+    "sd": 0.0071
+   },
+   "B_top3cls_acc95": {
+    "mean": 0.9167,
+    "sd": 0.0172
+   },
+   "B_top3cls_ret_sens": {
+    "mean": 0.9026,
+    "sd": 0.0269
+   },
+   "B_top3cls_fn_retained": {
+    "mean": 9.2,
+    "sd": 2.5884
+   },
+   "B_top3cls_deferred_pos": {
+    "mean": 10.6,
+    "sd": 1.5166
+   },
+   "B_top3cls_exam_sens": {
+    "mean": 0.9086,
+    "sd": 0.0197
+   },
+   "B_top3cls_exam_spec": {
+    "mean": 0.9203,
+    "sd": 0.0311
+   },
+   "C_top3score_aurc": {
+    "mean": 0.023,
+    "sd": 0.0062
+   },
+   "C_top3score_acc95": {
+    "mean": 0.9017,
+    "sd": 0.0263
+   },
+   "C_top3score_ret_sens": {
+    "mean": 0.9584,
+    "sd": 0.0085
+   },
+   "C_top3score_fn_retained": {
+    "mean": 4.2,
+    "sd": 0.8367
+   },
+   "C_top3score_deferred_pos": {
+    "mean": 4.0,
+    "sd": 1.5811
+   },
+   "C_top3score_exam_sens": {
+    "mean": 0.9524,
+    "sd": 0.0135
+   },
+   "C_top3score_exam_spec": {
+    "mean": 0.8189,
+    "sd": 0.05
+   },
+   "D_frozen_aurc": {
+    "mean": 0.0173,
+    "sd": 0.0034
+   },
+   "D_frozen_acc95": {
+    "mean": 0.9375,
+    "sd": 0.0164
+   },
+   "D_frozen_ret_sens": {
+    "mean": 0.9267,
+    "sd": 0.0218
+   },
+   "D_frozen_fn_retained": {
+    "mean": 7.4,
+    "sd": 2.1909
+   },
+   "D_frozen_deferred_pos": {
+    "mean": 4.0,
+    "sd": 1.8708
+   },
+   "D_frozen_exam_sens": {
+    "mean": 0.9086,
+    "sd": 0.0197
+   },
+   "D_frozen_exam_spec": {
+    "mean": 0.9203,
+    "sd": 0.0311
+   }
+  }
+ }
+}
