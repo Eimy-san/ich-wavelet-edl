@@ -138,13 +138,17 @@ for grp, (boxes, texts) in vals.items():
             a2[2001:2006, x0 - 6 : x1 + 6] = [248, 248, 248]
         im2 = Image.fromarray(a2.astype(np.uint8))
         d = ImageDraw.Draw(im2)
-        # rotated text, bottom anchored 8 px above the bar top
+        # tilted 45-degree text, lower-left end anchored just above the bar top
         tmp = Image.new("RGBA", (300, 70), (0, 0, 0, 0))
         dt = ImageDraw.Draw(tmp)
         dt.text((150, 35), txt, font=font_num, fill=DARK, anchor="mm")
-        rot = tmp.rotate(90, expand=True)
-        rw, rh = rot.size
-        im2.paste(rot, (int(cx - rw / 2), int(bartop - 10 - rh)), rot)
+        rot = tmp.rotate(45, expand=True)
+        bx0, by0, bx1, by1 = rot.getbbox()
+        im2.paste(
+            rot,
+            (int(cx - 14 - 8 - bx0), int(bartop - 12 + 8 - by1)),
+            rot,
+        )
 im2.save("revision/manuscript/figures/Fig.3.png")
 print("Fig.3 patched")
 

@@ -203,12 +203,12 @@ set_label((1400, 788, 1575, 858), (1330, 1395), "14²×1024", (1485, 823))
 set_label((1825, 788, 2000, 858), (1760, 1820), "7²×2048", (1912, 823))
 
 # ---- 7) risk-coverage schematic: white-out + matplotlib panel ----
-sx0, sy0, sx1, sy1 = 2360, 1435, 3720, 2080
+sx0, sy0, sx1, sy1 = 2360, 1325, 3720, 2080
 a8.paste((254, 254, 254), (sx0, sy0, sx1, sy1))
 
-PW, PH = sx1 - sx0, sy1 - sy0
+PW, PH = 1360, 645
 fig = plt.figure(figsize=(PW / 100, PH / 100), dpi=100)
-ax = fig.add_axes([0.115, 0.175, 0.845, 0.70])
+ax = fig.add_axes([0.115, 0.235, 0.845, 0.66])
 fp = FontProperties(family="DejaVu Sans")
 xs_ = np.linspace(0, 1, 200)
 acc = 0.985 - 0.058 * xs_**1.7
@@ -223,40 +223,40 @@ ax.text(
     ha="left",
     va="bottom",
     transform=ax.transAxes,
-    fontsize=24,
+    fontsize=48,
     color="#8A3A20",
     fontproperties=fp,
 )
 ax.text(
     0.024,
-    0.34,
+    -0.13,
     "5%",
     ha="center",
     va="center",
     transform=ax.transAxes,
-    fontsize=20,
+    fontsize=40,
     color="#8A3A20",
     fontproperties=fp,
 )
 ax.text(
-    0.545,
-    0.32,
+    0.45,
+    0.34,
     "Model prediction",
     ha="center",
     va="center",
     transform=ax.transAxes,
-    fontsize=36,
+    fontsize=72,
     color="#0E4E58",
     fontproperties=fp,
 )
 ax.text(
-    0.545,
-    0.18,
+    0.45,
+    0.14,
     "(95% of examinations)",
     ha="center",
     va="center",
     transform=ax.transAxes,
-    fontsize=22,
+    fontsize=44,
     color="#0E4E58",
     fontproperties=fp,
 )
@@ -264,8 +264,8 @@ ax.set_xlim(0, 1)
 ax.set_ylim(0.88, 1.0)
 ax.set_xticks([])
 ax.set_yticks([])
-ax.set_xlabel("Coverage", fontsize=28, fontproperties=fp, labelpad=8)
-ax.set_ylabel("Accuracy", fontsize=28, fontproperties=fp, labelpad=8)
+ax.set_xlabel("Coverage", fontsize=48, fontproperties=fp, labelpad=6)
+ax.set_ylabel("Accuracy", fontsize=48, fontproperties=fp, labelpad=6)
 for s in ["top", "right"]:
     ax.spines[s].set_visible(False)
 for s in ["left", "bottom"]:
@@ -273,11 +273,12 @@ for s in ["left", "bottom"]:
     ax.spines[s].set_linewidth(1.6)
 fig.text(
     0.5,
-    0.045,
-    "R I S K – C O V E R A G E   C O N C E P T",
+    0.012,
+    "RISK–COVERAGE CONCEPT",
     ha="center",
-    fontsize=24,
-    color="#5A6A72",
+    va="bottom",
+    fontsize=44,
+    color="#333333",
     fontproperties=fp,
 )
 fig.savefig("/tmp/rc_panel.png", dpi=100)
