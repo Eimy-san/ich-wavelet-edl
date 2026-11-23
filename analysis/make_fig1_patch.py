@@ -223,7 +223,7 @@ ax.text(
     ha="left",
     va="bottom",
     transform=ax.transAxes,
-    fontsize=48,
+    fontsize=30,
     color="#8A3A20",
     fontproperties=fp,
 )
@@ -245,7 +245,7 @@ ax.text(
     ha="center",
     va="center",
     transform=ax.transAxes,
-    fontsize=72,
+    fontsize=36,
     color="#0E4E58",
     fontproperties=fp,
 )
@@ -256,7 +256,7 @@ ax.text(
     ha="center",
     va="center",
     transform=ax.transAxes,
-    fontsize=44,
+    fontsize=26,
     color="#0E4E58",
     fontproperties=fp,
 )
@@ -264,8 +264,8 @@ ax.set_xlim(0, 1)
 ax.set_ylim(0.88, 1.0)
 ax.set_xticks([])
 ax.set_yticks([])
-ax.set_xlabel("Coverage", fontsize=48, fontproperties=fp, labelpad=6)
-ax.set_ylabel("Accuracy", fontsize=48, fontproperties=fp, labelpad=6)
+ax.set_xlabel("Coverage", fontsize=30, fontproperties=fp, labelpad=6)
+ax.set_ylabel("Accuracy", fontsize=30, fontproperties=fp, labelpad=6)
 for s in ["top", "right"]:
     ax.spines[s].set_visible(False)
 for s in ["left", "bottom"]:
@@ -277,7 +277,7 @@ fig.text(
     "RISK–COVERAGE CONCEPT",
     ha="center",
     va="bottom",
-    fontsize=44,
+    fontsize=26,
     color="#333333",
     fontproperties=fp,
 )
