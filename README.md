@@ -45,7 +45,8 @@ data/       Patient-level partition lists (train/val/test) and per-series rescal
 | `analyze9_learned_deferral.py` | Validation-fitted logistic deferral-rule exploration |
 | `analyze10_exam_final.py` | Per-seed rule-selection sensitivity analysis |
 | `analyze11_frozen.py` | Frozen-rule protocol: validation-selected decision-coupled rule applied unchanged to all configurations and seeds (Table 12) |
-| `results/` | Precomputed outputs of the above analyses (Tables 3, 4, 6, 7, 8, 10, 11, 12, S1) |
+| `analyze12_idwt_attribution.py` | Transform-matched robustness attribution: wavelet-only and wavelet+EDL retrained with the exact inverse transform for all five seeds, compared against the legacy-transform runs and the SE-only control (`results/idwt_attribution.json`) |
+| `results/` | Precomputed outputs of the above analyses (Tables 3, 4, 6, 7, 8, 10, 11, 12, S1; exact-transform robustness) |
 
 ### Data files (`data/`)
 
